@@ -1,0 +1,11 @@
+title: Anil's Blog
+description: My thoughts, ideas and stories
+theme: minima
+author: Anil Krishnan
+url: "https://krishnan107.github.io"
+baseurl: "/blog"
+show_excerpts: true
+minima:
+  skin: dark
+plugins:
+  - jekyll-feed
