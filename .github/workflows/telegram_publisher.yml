@@ -1,0 +1,70 @@
+name: Telegram Blog Publisher
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check Telegram approvals
+        env:
+          TG_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+        run: |
+          python3 << 'PYEOF'
+          import json, os, shutil, urllib.request
+
+          TG = os.environ['TG_TOKEN']
+          offset = 0
+          try:
+            with open('.tg_offset') as f: offset = int(f.read().strip() or 0)
+          except: pass
+
+          try:
+            url = f"https://api.telegram.org/bot{TG}/getUpdates?offset={offset}&timeout=5&allowed_updates=callback_query"
+            with urllib.request.urlopen(url, timeout=15) as r:
+              data = json.loads(r.read())
+          except Exception as e:
+            print(f"Error: {e}"); data = {'result': []}
+
+          updates = data.get('result', [])
+          new_offset = offset
+
+          for upd in updates:
+            new_offset = upd['update_id'] + 1
+            cb = upd.get('callback_query')
+            if not cb or ':' not in cb.get('data',''): continue
+            action, fname = cb['data'].split(':', 1)
+            cb_id = cb['id']; msg_id = cb['message']['message_id']; chat = cb['message']['chat']['id']
+
+            def tg(method, body):
+              req = urllib.request.Request(f"https://api.telegram.org/bot{TG}/{method}", json.dumps(body).encode(), {"Content-Type":"application/json"}, method="POST")
+              try: urllib.request.urlopen(req, timeout=10)
+              except: pass
+
+            if action == 'publish' and os.path.exists(f'_drafts/{fname}'):
+              shutil.move(f'_drafts/{fname}', f'_posts/{fname}')
+              tg('answerCallbackQuery', {'callback_query_id': cb_id, 'text': 'Published!'})
+              tg('editMessageText', {'chat_id': chat, 'message_id': msg_id, 'text': f'Published! Live at https://krishnan107.github.io/blog/'})
+            elif action == 'reject' and os.path.exists(f'_drafts/{fname}'):
+              os.remove(f'_drafts/{fname}')
+              tg('answerCallbackQuery', {'callback_query_id': cb_id, 'text': 'Discarded.'})
+              tg('editMessageText', {'chat_id': chat, 'message_id': msg_id, 'text': 'Post discarded.'})
+
+          with open('.tg_offset','w') as f: f.write(str(new_offset))
+          PYEOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "Blog Bot"
+          git config user.email "bot@krishnan107.github.io"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Auto-publish approved post" && git push)
