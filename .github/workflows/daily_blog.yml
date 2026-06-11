@@ -22,4 +22,12 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GH_TOKEN: ${{ secrets.BLOG_TOKEN }}
-        run: python .github/scripts/blog_writer.py
+        run: python .github/scripts/blog_writer.py 2>&1 | tee debug.log; exit ${PIPESTATUS[0]}
+      - name: Commit debug log
+        if: always()
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add debug.log || true
+          git diff --staged --quiet || git commit -m "Debug log"
+          git push || true
