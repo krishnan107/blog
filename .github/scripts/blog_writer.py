@@ -24,7 +24,7 @@ def get_news():
     return topic, stories
 
 def call_gemini(prompt):
-    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + GEMINI_API_KEY
+    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + GEMINI_API_KEY
     payload = {
         'contents': [{'parts': [{'text': prompt}]}],
         'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 2048}
