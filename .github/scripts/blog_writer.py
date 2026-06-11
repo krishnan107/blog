@@ -7,17 +7,22 @@ GH_TOKEN       = os.environ['GH_TOKEN']
 OWNER, REPO    = 'krishnan107', 'blog'
 
 RSS = [
-    ('sports',     'https://feeds.bbci.co.uk/sport/rss.xml'),
     ('world',      'https://feeds.bbci.co.uk/news/world/rss.xml'),
     ('technology', 'https://feeds.bbci.co.uk/news/technology/rss.xml'),
     ('science',    'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml'),
+    ('sports',     'https://feeds.bbci.co.uk/sport/rss.xml'),
 ]
 
 def get_news():
     topic, url = RSS[datetime.date.today().weekday() % len(RSS)]
     try:
         feed = feedparser.parse(url)
-        stories = ['- ' + e.get('title','') + ': ' + e.get('summary','')[:200] for e in feed.entries[:5]]
+        stories = []
+        for e in feed.entries[:5]:
+            t = e.get('title', '').strip()
+            s = e.get('summary', '')[:250].strip()
+            if t:
+                stories.append(t + ': ' + s)
     except Exception as e:
         print(f'RSS error: {e}')
         stories = ['Top news today']
@@ -27,7 +32,7 @@ def call_gemini(prompt):
     url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + GEMINI_API_KEY
     payload = {
         'contents': [{'parts': [{'text': prompt}]}],
-        'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 2048}
+        'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 3000}
     }
     r = requests.post(url, json=payload, timeout=60)
     print('Gemini status:', r.status_code)
@@ -36,19 +41,19 @@ def call_gemini(prompt):
 
 def push_draft(filename, content):
     path = '_drafts/' + filename
-    url = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path
+    url  = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path
     headers = {
         'Authorization': 'token ' + GH_TOKEN,
         'Accept': 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
+        'User-Agent': 'BlogWriter/1.0'
     }
-    ex = requests.get(url, headers=headers)
+    existing = requests.get(url, headers=headers)
     body = {
-        'message': 'Auto-draft: ' + filename,
-        'content': base64.b64encode(content.encode('utf-8')).decode()
+        'message': 'Add draft: ' + filename,
+        'content': base64.b64encode(content.encode()).decode()
     }
-    if ex.status_code == 200:
-        body['sha'] = ex.json()['sha']
+    if existing.status_code == 200:
+        body['sha'] = existing.json()['sha']
     r = requests.put(url, headers=headers, json=body)
     print('GitHub push status:', r.status_code)
     return r.status_code in (200, 201)
@@ -75,22 +80,27 @@ def main():
 
     print('Fetching news...')
     topic, stories = get_news()
-    print('Topic:', topic)
+    print('Topic:', topic, '| Stories found:', len(stories))
 
     prompt = (
         'Today is ' + today.strftime('%B %d, %Y') + '. '
-        'Write a 600-800 word engaging blog post about one of these ' + topic + ' news stories:\n\n'
-        + '\n'.join(stories) + '\n\n'
-        'Rules: Pick the most interesting story. Use ## for headings. '
-        'Conversational engaging style. No em-dashes. No special Unicode characters. Straight quotes only.\n\n'
-        'Return ONLY valid JSON in this exact format (no markdown code blocks):\n'
-        '{"title":"Blog Title Here","slug":"url-friendly-slug","content":"full markdown body here"}'
+        'Write a "Top 5 ' + topic.title() + ' News Today" blog post covering ALL 5 of these stories:\n\n'
+        + '\n'.join(['{}. {}'.format(i+1, s) for i, s in enumerate(stories)]) + '\n\n'
+        'Rules:\n'
+        '- Title must be "Top 5 ' + topic.title() + ' News Today - ' + today.strftime('%B %d, %Y') + '"\n'
+        '- Write a short intro paragraph\n'
+        '- Cover each story as its own section using ## for the heading (e.g. ## 1. Story Title)\n'
+        '- 2-3 paragraphs per story, engaging and informative\n'
+        '- End with a brief closing paragraph\n'
+        '- Total length 800-1000 words\n'
+        '- No em-dashes. No special Unicode characters. Straight quotes only.\n\n'
+        'Return ONLY valid JSON (no markdown code blocks):\n'
+        '{"title":"Top 5 ' + topic.title() + ' News Today - ' + today.strftime('%B %d, %Y') + '","slug":"top-5-' + topic + '-news-' + today.strftime('%Y-%m-%d') + '","content":"full markdown body here"}'
     )
 
     print('Calling Gemini...')
     raw = call_gemini(prompt).strip()
 
-    # Strip markdown code blocks if Gemini wraps in them
     if raw.startswith('```'):
         raw = re.sub(r'^```[a-z]*\s*', '', raw)
         raw = re.sub(r'\s*```$', '', raw)
