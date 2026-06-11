@@ -15,51 +15,113 @@ RSS = [
 
 def get_news():
     topic, url = RSS[datetime.date.today().weekday() % len(RSS)]
-    feed = feedparser.parse(url)
-    return topic, ['- ' + e.get('title','') + ': ' + e.get('summary','')[:200] for e in feed.entries[:5]]
+    try:
+        feed = feedparser.parse(url)
+        stories = ['- ' + e.get('title','') + ': ' + e.get('summary','')[:200] for e in feed.entries[:5]]
+    except Exception as e:
+        print(f'RSS error: {e}')
+        stories = ['Top news today']
+    return topic, stories
 
-def gemini(prompt):
-    url = f'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}'
-    r = requests.post(url, json={'contents':[{'parts':[{'text':prompt}]}],'generationConfig':{'temperature':0.8,'maxOutputTokens':2048}}, timeout=60)
+def call_gemini(prompt):
+    url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + GEMINI_API_KEY
+    payload = {
+        'contents': [{'parts': [{'text': prompt}]}],
+        'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 2048}
+    }
+    r = requests.post(url, json=payload, timeout=60)
+    print('Gemini status:', r.status_code)
     r.raise_for_status()
     return r.json()['candidates'][0]['content']['parts'][0]['text']
 
 def push_draft(filename, content):
-    path, h = f'_drafts/{filename}', {'Authorization':f'token {GH_TOKEN}','Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}
-    url = f'https://api.github.com/repos/{OWNER}/{REPO}/contents/{path}'
-    ex = requests.get(url, headers=h)
-    body = {'message':f'Auto-draft: {filename}','content':base64.b64encode(content.encode()).decode()}
-    if ex.status_code == 200: body['sha'] = ex.json()['sha']
-    return requests.put(url, headers=h, json=body).status_code in (200,201)
+    path = '_drafts/' + filename
+    url = 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + path
+    headers = {
+        'Authorization': 'token ' + GH_TOKEN,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+    }
+    ex = requests.get(url, headers=headers)
+    body = {
+        'message': 'Auto-draft: ' + filename,
+        'content': base64.b64encode(content.encode('utf-8')).decode()
+    }
+    if ex.status_code == 200:
+        body['sha'] = ex.json()['sha']
+    r = requests.put(url, headers=headers, json=body)
+    print('GitHub push status:', r.status_code)
+    return r.status_code in (200, 201)
 
-def notify(title, filename):
-    requests.post(f'https://api.telegram.org/bot{TG_TOKEN}/sendMessage', json={
+def send_telegram(title, filename):
+    url = 'https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage'
+    payload = {
         'chat_id': TG_CHAT_ID,
-        'text': f'New Blog Post Ready\n\nTitle: {title}\n\nTap Publish Now to make it live.',
-        'reply_markup':{'inline_keyboard':[[
-            {'text':'Publish Now','callback_data':f'publish:{filename}'},
-            {'text':'Reject','callback_data':f'reject:{filename}'}
-        ]]}
-    })
+        'text': 'New Blog Post Ready\n\nTitle: ' + title + '\n\nTap Publish Now to make it live on your blog.',
+        'reply_markup': {
+            'inline_keyboard': [[
+                {'text': 'Publish Now', 'callback_data': 'publish:' + filename},
+                {'text': 'Reject',      'callback_data': 'reject:'  + filename}
+            ]]
+        }
+    }
+    r = requests.post(url, json=payload)
+    print('Telegram status:', r.status_code)
+    return r.json()
 
-today = datetime.date.today()
-topic, stories = get_news()
-print(f'Topic: {topic}')
+def main():
+    today = datetime.date.today()
+    print('Date:', today)
 
-prompt = f"""Today is {today.strftime('%B %d, %Y')}. Write a 600-800 word blog post about one of these {topic} stories:
-{chr(10).join(stories)}
+    print('Fetching news...')
+    topic, stories = get_news()
+    print('Topic:', topic)
 
-Pick the most interesting story. Use ## headings. Engaging style. No em-dashes, no special Unicode.
-Return ONLY valid JSON: {{"title":"Title Here","slug":"url-slug","content":"full markdown body"}}"""
+    prompt = (
+        'Today is ' + today.strftime('%B %d, %Y') + '. '
+        'Write a 600-800 word engaging blog post about one of these ' + topic + ' news stories:\n\n'
+        + '\n'.join(stories) + '\n\n'
+        'Rules: Pick the most interesting story. Use ## for headings. '
+        'Conversational engaging style. No em-dashes. No special Unicode characters. Straight quotes only.\n\n'
+        'Return ONLY valid JSON in this exact format (no markdown code blocks):\n'
+        '{"title":"Blog Title Here","slug":"url-friendly-slug","content":"full markdown body here"}'
+    )
 
-raw = gemini(prompt).strip()
-if raw.startswith('```'): raw = re.sub(r'^```[a-z]*\n?','',raw); raw = re.sub(r'\n?```$','',raw)
-post = json.loads(raw)
+    print('Calling Gemini...')
+    raw = call_gemini(prompt).strip()
 
-filename = f"{today.strftime('%Y-%m-%d')}-{post['slug']}.md"
-content = f"---\nlayout: post\ntitle: \"{post['title']}\"\ndate: {today}\ncategories: [{topic}]\nauthor: Anil\n---\n\n{post['content']}"
+    # Strip markdown code blocks if Gemini wraps in them
+    if raw.startswith('```'):
+        raw = re.sub(r'^```[a-z]*\s*', '', raw)
+        raw = re.sub(r'\s*```$', '', raw)
+    raw = raw.strip()
+    print('Raw response length:', len(raw))
 
-print(f'Pushing {filename}')
-push_draft(filename, content)
-notify(post['title'], filename)
-print('Done!')
+    post = json.loads(raw)
+    print('Title:', post['title'])
+    print('Slug:', post['slug'])
+
+    filename = today.strftime('%Y-%m-%d') + '-' + post['slug'] + '.md'
+    content = (
+        '---\n'
+        'layout: post\n'
+        'title: "' + post['title'] + '"\n'
+        'date: ' + str(today) + '\n'
+        'categories: [' + topic + ']\n'
+        'author: Anil\n'
+        '---\n\n'
+        + post['content']
+    )
+
+    print('Pushing draft:', filename)
+    ok = push_draft(filename, content)
+    if not ok:
+        raise Exception('GitHub push failed')
+
+    print('Sending Telegram notification...')
+    result = send_telegram(post['title'], filename)
+    print('Telegram result:', result.get('ok'))
+    print('Done!')
+
+if __name__ == '__main__':
+    main()
