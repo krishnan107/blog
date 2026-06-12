@@ -1,4 +1,4 @@
-import os, json, datetime, requests, feedparser, re, base64
+import os, json, datetime, requests, feedparser, re, base64, time
 
 GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
 TG_TOKEN       = os.environ['TELEGRAM_TOKEN']
@@ -20,19 +20,19 @@ def get_news():
         stories = []
         for e in feed.entries[:5]:
             t = e.get('title', '').strip()
-            s = e.get('summary', '')[:250].strip()
+            s = e.get('summary', '')[:300].strip()
             if t:
-                stories.append(t + ': ' + s)
+                stories.append({'title': t, 'summary': s})
     except Exception as e:
         print(f'RSS error: {e}')
-        stories = ['Top news today']
+        stories = [{'title': 'Top news today', 'summary': ''}]
     return topic, stories
 
 def call_gemini(prompt):
     url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=' + GEMINI_API_KEY
     payload = {
         'contents': [{'parts': [{'text': prompt}]}],
-        'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 3000}
+        'generationConfig': {'temperature': 0.8, 'maxOutputTokens': 1500}
     }
     r = requests.post(url, json=payload, timeout=60)
     print('Gemini status:', r.status_code)
@@ -74,6 +74,27 @@ def send_telegram(title, filename):
     print('Telegram status:', r.status_code)
     return r.json()
 
+def write_post_for_story(story, topic, today, index):
+    prompt = (
+        'Today is ' + today.strftime('%B %d, %Y') + '. '
+        'Write a 400-600 word engaging blog post about this news story:\n\n'
+        'Headline: ' + story['title'] + '\n'
+        'Summary: ' + story['summary'] + '\n\n'
+        'Rules:\n'
+        '- Use ## for section headings\n'
+        '- Engaging, conversational style\n'
+        '- No em-dashes. No special Unicode characters. Straight quotes only.\n'
+        '- End with a brief conclusion paragraph\n\n'
+        'Return ONLY valid JSON (no markdown code blocks):\n'
+        '{"title":"Blog title here","slug":"url-friendly-slug","content":"full markdown body here"}'
+    )
+    raw = call_gemini(prompt).strip()
+    if raw.startswith('```'):
+        raw = re.sub(r'^```[a-z]*\s*', '', raw)
+        raw = re.sub(r'\s*```$', '', raw)
+    raw = raw.strip()
+    return json.loads(raw)
+
 def main():
     today = datetime.date.today()
     print('Date:', today)
@@ -82,56 +103,44 @@ def main():
     topic, stories = get_news()
     print('Topic:', topic, '| Stories found:', len(stories))
 
-    prompt = (
-        'Today is ' + today.strftime('%B %d, %Y') + '. '
-        'Write a "Top 5 ' + topic.title() + ' News Today" blog post covering ALL 5 of these stories:\n\n'
-        + '\n'.join(['{}. {}'.format(i+1, s) for i, s in enumerate(stories)]) + '\n\n'
-        'Rules:\n'
-        '- Title must be "Top 5 ' + topic.title() + ' News Today - ' + today.strftime('%B %d, %Y') + '"\n'
-        '- Write a short intro paragraph\n'
-        '- Cover each story as its own section using ## for the heading (e.g. ## 1. Story Title)\n'
-        '- 2-3 paragraphs per story, engaging and informative\n'
-        '- End with a brief closing paragraph\n'
-        '- Total length 800-1000 words\n'
-        '- No em-dashes. No special Unicode characters. Straight quotes only.\n\n'
-        'Return ONLY valid JSON (no markdown code blocks):\n'
-        '{"title":"Top 5 ' + topic.title() + ' News Today - ' + today.strftime('%B %d, %Y') + '","slug":"top-5-' + topic + '-news-' + today.strftime('%Y-%m-%d') + '","content":"full markdown body here"}'
-    )
+    for i, story in enumerate(stories):
+        print(f'\n--- Story {i+1}/{len(stories)}: {story["title"]} ---')
+        try:
+            post = write_post_for_story(story, topic, today, i)
+            print('Title:', post['title'])
+            print('Slug:', post['slug'])
 
-    print('Calling Gemini...')
-    raw = call_gemini(prompt).strip()
+            filename = today.strftime('%Y-%m-%d') + '-' + post['slug'] + '.md'
+            content = (
+                '---\n'
+                'layout: post\n'
+                'title: "' + post['title'] + '"\n'
+                'date: ' + str(today) + '\n'
+                'categories: [' + topic + ']\n'
+                'author: Anil\n'
+                '---\n\n'
+                + post['content']
+            )
 
-    if raw.startswith('```'):
-        raw = re.sub(r'^```[a-z]*\s*', '', raw)
-        raw = re.sub(r'\s*```$', '', raw)
-    raw = raw.strip()
-    print('Raw response length:', len(raw))
+            print('Pushing draft:', filename)
+            ok = push_draft(filename, content)
+            if not ok:
+                print('GitHub push failed for:', filename)
+                continue
 
-    post = json.loads(raw)
-    print('Title:', post['title'])
-    print('Slug:', post['slug'])
+            print('Sending Telegram notification...')
+            result = send_telegram(post['title'], filename)
+            print('Telegram result:', result.get('ok'))
 
-    filename = today.strftime('%Y-%m-%d') + '-' + post['slug'] + '.md'
-    content = (
-        '---\n'
-        'layout: post\n'
-        'title: "' + post['title'] + '"\n'
-        'date: ' + str(today) + '\n'
-        'categories: [' + topic + ']\n'
-        'author: Anil\n'
-        '---\n\n'
-        + post['content']
-    )
+            # Small delay between stories to avoid rate limits
+            if i < len(stories) - 1:
+                time.sleep(3)
 
-    print('Pushing draft:', filename)
-    ok = push_draft(filename, content)
-    if not ok:
-        raise Exception('GitHub push failed')
+        except Exception as e:
+            print(f'Error on story {i+1}: {e}')
+            continue
 
-    print('Sending Telegram notification...')
-    result = send_telegram(post['title'], filename)
-    print('Telegram result:', result.get('ok'))
-    print('Done!')
+    print('\nDone! All 5 stories processed.')
 
 if __name__ == '__main__':
     main()
