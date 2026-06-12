@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WayfarerTrip - Latest News & Stories</title>
+<meta name="description" content="Latest world news, technology, science and sports stories from WayfarerTrip">
+<meta property="og:title" content="WayfarerTrip">
+<meta property="og:description" content="Latest news and stories from around the world">
+<meta property="og:type" content="website">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:#f0f0f0;color:#222;font-size:15px}
+a{text-decoration:none;color:inherit}
+
+/* ── Header ── */
+.header{background:#fff;position:sticky;top:0;z-index:100;border-bottom:3px solid #cc0000}
+.header-top{max-width:1200px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}
+.logo{font-size:26px;font-weight:700;color:#cc0000;letter-spacing:-0.5px}
+.logo span{color:#222}
+.header-date{margin-left:auto;font-size:12px;color:#888}
+.nav-bar{background:#cc0000}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-inner a{color:#fff;padding:9px 16px;font-size:13px;font-weight:600;display:block;white-space:nowrap;letter-spacing:0.3px;text-transform:uppercase;opacity:0.9}
+.nav-inner a:hover,.nav-inner a.active{opacity:1;background:rgba(0,0,0,0.2)}
+
+/* ── Ticker ── */
+.ticker{background:#1a1a1a;padding:5px 0;overflow:hidden;display:flex;align-items:center}
+.ticker-label{background:#cc0000;color:#fff;padding:4px 12px;font-size:11px;font-weight:700;white-space:nowrap;margin-right:12px;flex-shrink:0;text-transform:uppercase;letter-spacing:0.5px}
+.ticker-wrap{overflow:hidden;flex:1}
+.ticker-text{color:#ddd;font-size:12px;white-space:nowrap;animation:ticker 40s linear infinite}
+@keyframes ticker{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+
+/* ── Main layout ── */
+.container{max-width:1200px;margin:0 auto;padding:14px 12px}
+
+/* ── Hero ── */
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:12px;margin-bottom:14px}
+.hero-card{background:#fff;border-radius:3px;overflow:hidden;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.hero-card:hover .hero-title{color:#cc0000}
+.hero-banner{position:relative;height:320px;display:flex;align-items:flex-end;padding:20px}
+.hero-gradient{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.3) 50%,rgba(0,0,0,0.05) 100%)}
+.hero-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:72px;opacity:0.35}
+.hero-text{position:relative;z-index:1}
+.cat-pill{background:#cc0000;color:#fff;font-size:10px;font-weight:700;padding:3px 9px;border-radius:2px;text-transform:uppercase;letter-spacing:0.5px;display:inline-block;margin-bottom:8px}
+.hero-title{font-size:22px;font-weight:700;color:#fff;line-height:1.3;text-shadow:0 1px 6px rgba(0,0,0,0.6)}
+.hero-meta{color:rgba(255,255,255,0.65);font-size:12px;margin-top:7px}
+.hero-excerpt{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.5;margin-top:6px}
+
+/* ── Side stack ── */
+.hero-side{display:flex;flex-direction:column;gap:8px}
+.side-card{background:#fff;border-radius:3px;display:flex;overflow:hidden;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+.side-card:hover{box-shadow:0 2px 6px rgba(0,0,0,0.12)}
+.side-card:hover .side-title{color:#cc0000}
+.side-icon{width:85px;min-width:85px;height:72px;display:flex;align-items:center;justify-content:center;font-size:26px}
+.side-info{padding:9px 10px;flex:1;min-width:0}
+.side-cat{font-size:10px;font-weight:700;color:#cc0000;text-transform:uppercase;letter-spacing:0.4px;margin-bottom:3px}
+.side-title{font-size:12px;font-weight:600;line-height:1.4;color:#222;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.side-time{font-size:10px;color:#aaa;margin-top:4px}
+
+/* ── Section header ── */
+.section-head{display:flex;align-items:center;gap:10px;margin:14px 0 10px;padding-bottom:7px;border-bottom:2px solid #cc0000}
+.section-head h2{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:#222}
+.section-head .count{font-size:12px;color:#aaa;margin-left:auto}
+
+/* ── Post grid ── */
+.posts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-bottom:20px}
+.post-card{background:#fff;border-radius:3px;overflow:hidden;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.07);transition:box-shadow 0.2s,transform 0.15s}
+.post-card:hover{box-shadow:0 3px 10px rgba(0,0,0,0.12);transform:translateY(-1px)}
+.post-card:hover .post-title{color:#cc0000}
+.post-thumb{height:150px;display:flex;align-items:center;justify-content:center;font-size:40px;position:relative}
+.post-badge{position:absolute;top:8px;left:8px;background:#cc0000;color:#fff;font-size:9px;font-weight:700;padding:2px 7px;text-transform:uppercase;letter-spacing:0.4px;border-radius:2px}
+.post-body{padding:12px}
+.post-title{font-size:14px;font-weight:600;line-height:1.4;color:#222;margin-bottom:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.post-excerpt{font-size:12px;color:#777;line-height:1.5;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.post-meta{font-size:11px;color:#aaa;display:flex;justify-content:space-between;align-items:center}
+
+/* ── Empty / Loading ── */
+.msg{text-align:center;padding:48px 20px;color:#aaa;font-size:14px}
+.msg .big{font-size:40px;margin-bottom:8px}
+
+/* ── Footer ── */
+.footer{background:#1a1a1a;color:#999;padding:32px 16px 20px;margin-top:24px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-logo{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px}
+.footer-logo span{color:#cc0000}
+.footer-desc{font-size:13px;margin-bottom:14px;line-height:1.6}
+.footer-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:16px}
+.footer-links a{color:#bbb;font-size:13px}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:11px;border-top:1px solid #333;padding-top:12px;color:#666}
+
+@media(max-width:720px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-side{display:none}
+  .posts-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:440px){
+  .posts-grid{grid-template-columns:1fr}
+  .hero-banner{height:240px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <a href="/" class="logo">Wayfarer<span>Trip</span></a>
+    <div class="header-date" id="hdate"></div>
+  </div>
+  <nav class="nav-bar">
+    <div class="nav-inner" id="nav">
+      <a href="/" onclick="filterCat('all',this)">All</a>
+      <a href="#" onclick="filterCat('world',this)">World</a>
+      <a href="#" onclick="filterCat('technology',this)">Technology</a>
+      <a href="#" onclick="filterCat('science',this)">Science</a>
+      <a href="#" onclick="filterCat('sports',this)">Sports</a>
+    </div>
+  </nav>
+</header>
+
+<div class="ticker">
+  <span class="ticker-label">Breaking</span>
+  <div class="ticker-wrap"><div class="ticker-text" id="ticker">Loading...</div></div>
+</div>
+
+<main class="container">
+  <div id="hero-area"></div>
+  <div class="section-head">
+    <h2 id="section-title">Latest Stories</h2>
+    <span class="count" id="post-count"></span>
+  </div>
+  <div class="posts-grid" id="grid">
+    <div class="msg"><div class="big">📰</div>Loading stories...</div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Wayfarer<span>Trip</span></div>
+    <div class="footer-desc">Latest news and stories from around the world, delivered daily.</div>
+    <div class="footer-links">
+      <a href="#" onclick="filterCat('world')">World</a>
+      <a href="#" onclick="filterCat('technology')">Technology</a>
+      <a href="#" onclick="filterCat('science')">Science</a>
+      <a href="#" onclick="filterCat('sports')">Sports</a>
+    </div>
+    <div class="footer-copy">© 2026 WayfarerTrip.com &nbsp;·&nbsp; Hosted on Cloudflare Pages &nbsp;·&nbsp; Powered by AI</div>
+  </div>
+</footer>
+
+<script>
+const catColors = {world:'#1565c0',technology:'#6a1b9a',science:'#00695c',sports:'#e65100',default:'#444'};
+const catBg = {world:'#e3f2fd',technology:'#f3e5f5',science:'#e0f2f1',sports:'#fff3e0',default:'#f5f5f5'};
+const catEmoji = {world:'🌍',technology:'💻',science:'🔬',sports:'⚽',default:'📰'};
+
+document.getElementById('hdate').textContent = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+
+let allPosts = [];
+let currentCat = 'all';
+
+function filterCat(cat, el) {
+  currentCat = cat;
+  document.querySelectorAll('.nav-inner a').forEach(a => a.classList.remove('active'));
+  if (el) el.classList.add('active');
+  render(allPosts);
+}
+
+function slugToUrl(filename) {
+  return '/_posts/' + filename;
+}
+
+function render(posts) {
+  const filtered = currentCat === 'all' ? posts : posts.filter(p => p.category === currentCat);
+  document.getElementById('post-count').textContent = filtered.length + ' stories';
+
+  // Ticker
+  document.getElementById('ticker').textContent = filtered.slice(0,6).map(p => p.title).join('  ·  ');
+
+  if (!filtered.length) {
+    document.getElementById('hero-area').innerHTML = '';
+    document.getElementById('grid').innerHTML = '<div class="msg"><div class="big">🔍</div>No stories in this category yet.</div>';
+    return;
+  }
+
+  // Hero
+  const h = filtered[0];
+  const hColor = catColors[h.category] || catColors.default;
+  document.getElementById('hero-area').innerHTML =
+    '<div class="hero-grid">' +
+      '<div class="hero-card" onclick="location.href=\''+slugToUrl(h.filename)+'\'">' +
+        '<div class="hero-banner" style="background:'+hColor+'">' +
+          '<div class="hero-emoji">'+(catEmoji[h.category]||catEmoji.default)+'</div>' +
+          '<div class="hero-gradient"></div>' +
+          '<div class="hero-text">' +
+            '<span class="cat-pill">'+(h.category||'news')+'</span>' +
+            '<div class="hero-title">'+h.title+'</div>' +
+            '<div class="hero-excerpt">'+(h.excerpt||'')+'</div>' +
+            '<div class="hero-meta">By '+(h.author||'Anil')+' &nbsp;·&nbsp; '+h.date+' &nbsp;·&nbsp; '+(h.readtime||'5')+' min read</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="hero-side">' +
+        filtered.slice(1,5).map(p =>
+          '<div class="side-card" onclick="location.href=\''+slugToUrl(p.filename)+'\'">' +
+            '<div class="side-icon" style="background:'+(catBg[p.category]||catBg.default)+'">'+(catEmoji[p.category]||catEmoji.default)+'</div>' +
+            '<div class="side-info">' +
+              '<div class="side-cat">'+(p.category||'news')+'</div>' +
+              '<div class="side-title">'+p.title+'</div>' +
+              '<div class="side-time">'+p.date+' &nbsp;·&nbsp; '+(p.readtime||'5')+' min</div>' +
+            '</div>' +
+          '</div>'
+        ).join('') +
+      '</div>' +
+    '</div>';
+
+  // Grid
+  const gridPosts = filtered.slice(5);
+  if (!gridPosts.length) {
+    document.getElementById('grid').innerHTML = '<div class="msg"><div class="big">✅</div>More stories coming tomorrow!</div>';
+    return;
+  }
+  document.getElementById('grid').innerHTML = gridPosts.map(p => {
+    const color = catColors[p.category] || catColors.default;
+    const bg = catBg[p.category] || catBg.default;
+    return '<div class="post-card" onclick="location.href=\''+slugToUrl(p.filename)+'\'">' +
+      '<div class="post-thumb" style="background:'+bg+'">' +
+        '<span class="post-badge">'+(p.category||'news')+'</span>' +
+        '<span>'+(catEmoji[p.category]||catEmoji.default)+'</span>' +
+      '</div>' +
+      '<div class="post-body">' +
+        '<div class="post-title">'+p.title+'</div>' +
+        '<div class="post-excerpt">'+(p.excerpt||'')+'</div>' +
+        '<div class="post-meta"><span>'+p.date+'</span><span>'+(p.readtime||'5')+' min read</span></div>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+// Load posts
+fetch('/posts.json')
+  .then(r => r.json())
+  .then(data => {
+    allPosts = data;
+    // Activate 'All' nav
+    const navLinks = document.querySelectorAll('.nav-inner a');
+    if (navLinks.length) navLinks[0].classList.add('active');
+    render(allPosts);
+  })
+  .catch(() => {
+    document.getElementById('grid').innerHTML = '<div class="msg"><div class="big">📰</div>Stories will appear here once published.</div>';
+  });
+</script>
+</body>
+</html>
