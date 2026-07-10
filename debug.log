@@ -1,16 +1,45 @@
-Date: 2026-06-11
+Date: 2026-07-10
 Fetching news...
-Topic: science
-Calling Gemini...
-Gemini status: 403
-Traceback (most recent call last):
-  File "/home/runner/work/blog/blog/.github/scripts/blog_writer.py", line 127, in <module>
-    main()
-  File "/home/runner/work/blog/blog/.github/scripts/blog_writer.py", line 91, in main
-    raw = call_gemini(prompt).strip()
-          ^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/blog/blog/.github/scripts/blog_writer.py", line 34, in call_gemini
-    r.raise_for_status()
-  File "/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/requests/models.py", line 1167, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lite-latest:generateContent?key=
+Topic: world | Stories found: 5
+
+--- Story 1/5: Huge crowds in Mashhad as Iran's late supreme leader is buried ---
+Gemini status: 200
+Title: A Historic Day in Mashhad: The Final Chapter for Ali Khamenei
+Slug: historic-day-mashhad-khamenei-burial
+Pushing draft: 2026-07-10-historic-day-mashhad-khamenei-burial.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-10-historic-day-mashhad-khamenei-burial.md
+
+--- Story 2/5: Ukrainian agent accused of murdering Monaco bomb suspect changes story ---
+Gemini status: 200
+Title: A Deadly Twist in the Monaco Mystery
+Slug: deadly-twist-monaco-mystery
+Pushing draft: 2026-07-10-deadly-twist-monaco-mystery.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-10-deadly-twist-monaco-mystery.md
+
+--- Story 3/5: Palestinians mourn Gaza World Cup screenings organiser killed in Israeli strike ---
+Gemini status: 200
+Title: Remembering Mohammed al-Wahidi: A Light Amidst the Darkness
+Slug: remembering-mohammed-al-wahidi
+Pushing draft: 2026-07-10-remembering-mohammed-al-wahidi.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-10-remembering-mohammed-al-wahidi.md
+
+--- Story 4/5: China lands reusable rocket for first time, state media says ---
+Gemini status: 200
+Title: China Joins the Reusable Rocket Race
+Slug: china-joins-the-reusable-rocket-race
+Pushing draft: 2026-07-10-china-joins-the-reusable-rocket-race.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-10-china-joins-the-reusable-rocket-race.md
+
+--- Story 5/5: Chip giant SK Hynix raises $26.5bn in mega US share sale ---
+Gemini status: 200
+Title: A Historic Day for Silicon: SK Hynix Hits the Nasdaq
+Slug: sk-hynix-nasdaq-debut
+Pushing draft: 2026-07-10-sk-hynix-nasdaq-debut.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-10-sk-hynix-nasdaq-debut.md
+
+Done! All 5 stories processed.
