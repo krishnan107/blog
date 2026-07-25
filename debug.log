@@ -1,37 +1,45 @@
-Date: 2026-07-24
+Date: 2026-07-25
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: France orders evacuation of tourist spot as hundreds flee wildfires by boat ---
+--- Story 1/5: Warning shot or publicity stunt - how worried should we be about the OpenAI hack? ---
 Gemini status: 200
-Error on story 1: Invalid \escape: line 4 column 1574 (char 1722)
-
---- Story 2/5: US hits dozens of countries with new wave of tariffs ---
-Gemini status: 200
-Title: The New Tariff Wave Is Here: What You Need to Know
-Slug: new-tariff-wave-forced-labour-concerns
-Pushing draft: 2026-07-24-new-tariff-wave-forced-labour-concerns.md
+Title: Warning Shot or Publicity Stunt: How Worried Should We Be About the OpenAI Hack?
+Slug: warning-shot-or-publicity-stunt-openai-hack
+Pushing draft: 2026-07-25-warning-shot-or-publicity-stunt-openai-hack.md
 GitHub push status: 401
-GitHub push failed for: 2026-07-24-new-tariff-wave-forced-labour-concerns.md
+GitHub push failed for: 2026-07-25-warning-shot-or-publicity-stunt-openai-hack.md
 
---- Story 3/5: US and Iran trade more strikes in Gulf as fears of escalation mount ---
+--- Story 2/5: PlayStation Network outage resolved after thousands of gamers unable to play ---
 Gemini status: 200
-Error on story 3: Invalid control character at: line 4 column 347 (char 475)
-
---- Story 4/5: Oil prices hit $100 for the first time since May ---
-Gemini status: 200
-Title: Oil Hits the Magic Hundred Dollar Mark Amid Middle East Tensions
-Slug: oil-hits-100-dollars-middle-east-tensions
-Pushing draft: 2026-07-24-oil-hits-100-dollars-middle-east-tensions.md
+Title: The Great PlayStation Blackout of July 2026
+Slug: playstation-network-outage-july-2026
+Pushing draft: 2026-07-25-playstation-network-outage-july-2026.md
 GitHub push status: 401
-GitHub push failed for: 2026-07-24-oil-hits-100-dollars-middle-east-tensions.md
+GitHub push failed for: 2026-07-25-playstation-network-outage-july-2026.md
 
---- Story 5/5: Indonesian babies were trafficked to Singapore. What happens to them now? ---
+--- Story 3/5: Trump vows to investigate EU over fining of US tech companies ---
 Gemini status: 200
-Title: Indonesian Babies Trafficked to Singapore: What Happens Now?
-Slug: indonesian-babies-trafficked-to-singapore-what-happens-now
-Pushing draft: 2026-07-24-indonesian-babies-trafficked-to-singapore-what-happens-now.md
+Title: Washington and Brussels Brace for Tech Clash
+Slug: washington-and-brussels-brace-for-tech-clash
+Pushing draft: 2026-07-25-washington-and-brussels-brace-for-tech-clash.md
 GitHub push status: 401
-GitHub push failed for: 2026-07-24-indonesian-babies-trafficked-to-singapore-what-happens-now.md
+GitHub push failed for: 2026-07-25-washington-and-brussels-brace-for-tech-clash.md
+
+--- Story 4/5: How Jimothy the raccoon became the internet's latest animal obsession ---
+Gemini status: 200
+Title: Meet Jimothy: The Raccoon Who Stole the Internet's Heart
+Slug: meet-jimothy-the-raccoon
+Pushing draft: 2026-07-25-meet-jimothy-the-raccoon.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-25-meet-jimothy-the-raccoon.md
+
+--- Story 5/5: Google fined €890m by EU for favouring its own apps over rivals ---
+Gemini status: 200
+Title: Google Just Got Hit With a Massive EU Fine
+Slug: google-fined-890m-eu-digital-rules
+Pushing draft: 2026-07-25-google-fined-890m-eu-digital-rules.md
+GitHub push status: 401
+GitHub push failed for: 2026-07-25-google-fined-890m-eu-digital-rules.md
 
 Done! All 5 stories processed.
