@@ -1,45 +1,35 @@
-Date: 2026-08-28
+Date: 2026-08-29
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: Norway mourns King Harald as Haakon VIII ascends throne ---
+--- Story 1/5: Matt Lucas and Hugh Bonneville among actors calling for law on AI voice cloning ---
 Gemini status: 200
-Title: A New Era for Norway: Remembering King Harald and Welcoming King Haakon VIII
-Slug: norway-mourns-king-harald-haakon-viii-ascends
-Pushing draft: 2026-08-28-norway-mourns-king-harald-haakon-viii-ascends.md
+Title: Matt Lucas and Hugh Bonneville Lead the Charge to Protect UK Voices from AI Cloning
+Slug: matt-lucas-hugh-bonneville-ai-voice-cloning
+Pushing draft: 2026-08-29-matt-lucas-hugh-bonneville-ai-voice-cloning.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-28-norway-mourns-king-harald-haakon-viii-ascends.md
+GitHub push failed for: 2026-08-29-matt-lucas-hugh-bonneville-ai-voice-cloning.md
 
---- Story 2/5: Oslo mayor calls off wedding ceremony after death of Norway's king ---
+--- Story 2/5: Time is running out for cyber security, warn top tech firms ---
 Gemini status: 200
-Title: Royal Mourning Halts Oslo Mayor's Wedding
-Slug: oslo-mayor-cancels-wedding-norway-king-death
-Pushing draft: 2026-08-28-oslo-mayor-cancels-wedding-norway-king-death.md
+Title: The AI Security Clock is Ticking Fast
+Slug: ai-security-clock-is-ticking-fast
+Pushing draft: 2026-08-29-ai-security-clock-is-ticking-fast.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-28-oslo-mayor-cancels-wedding-norway-king-death.md
+GitHub push failed for: 2026-08-29-ai-security-clock-is-ticking-fast.md
 
---- Story 3/5: Russia ramps up rhetoric but wants to avoid war with Nato, Western officials say ---
-Gemini status: 200
-Title: Walking the Tightrope: Russia, NATO, and the Art of the Hybrid War
-Slug: russia-nato-hybrid-war-2026
-Pushing draft: 2026-08-28-russia-nato-hybrid-war-2026.md
-GitHub push status: 401
-GitHub push failed for: 2026-08-28-russia-nato-hybrid-war-2026.md
+--- Story 3/5: Reform of all social media should come with Meta changes, UN says ---
+Error on story 3: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
 
---- Story 4/5: Right-wing commentator Milo Yiannopoulos detained by ICE ---
+--- Story 4/5: What the Meta settlement means for the UK, and other questions after the deal ---
 Gemini status: 200
-Title: The Plot Twist Nobody Saw: Milo Yiannopoulos Detained by ICE
-Slug: milo-yiannopoulos-detained-by-ice
-Pushing draft: 2026-08-28-milo-yiannopoulos-detained-by-ice.md
+Title: The Meta Settlement: What It Means for the UK and Beyond
+Slug: meta-settlement-uk-impact-questions
+Pushing draft: 2026-08-29-meta-settlement-uk-impact-questions.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-28-milo-yiannopoulos-detained-by-ice.md
+GitHub push failed for: 2026-08-29-meta-settlement-uk-impact-questions.md
 
---- Story 5/5: Violence breaks out in Ceuta as migrant crisis continues ---
-Gemini status: 200
-Title: Tensions Reach a Boiling Point in Ceuta
-Slug: tensions-reach-a-boiling-point-in-ceuta
-Pushing draft: 2026-08-28-tensions-reach-a-boiling-point-in-ceuta.md
-GitHub push status: 401
-GitHub push failed for: 2026-08-28-tensions-reach-a-boiling-point-in-ceuta.md
+--- Story 5/5: Unexpected chat between OpenAI agents led to Hugging Face hack ---
+Error on story 5: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
 
 Done! All 5 stories processed.
