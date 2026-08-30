@@ -1,35 +1,36 @@
-Date: 2026-08-29
+Date: 2026-08-30
 Fetching news...
-Topic: technology | Stories found: 5
+Topic: science | Stories found: 5
 
---- Story 1/5: Matt Lucas and Hugh Bonneville among actors calling for law on AI voice cloning ---
+--- Story 1/5: The race to stop England running out of water ---
+Error on story 1: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+
+--- Story 2/5: Thunderstorms and gusty winds set to continue into Bank Holiday Monday ---
 Gemini status: 200
-Title: Matt Lucas and Hugh Bonneville Lead the Charge to Protect UK Voices from AI Cloning
-Slug: matt-lucas-hugh-bonneville-ai-voice-cloning
-Pushing draft: 2026-08-29-matt-lucas-hugh-bonneville-ai-voice-cloning.md
-GitHub push status: 401
-GitHub push failed for: 2026-08-29-matt-lucas-hugh-bonneville-ai-voice-cloning.md
+Error on story 2: Invalid control character at: line 4 column 422 (char 571)
 
---- Story 2/5: Time is running out for cyber security, warn top tech firms ---
+--- Story 3/5: How the weather in space can affect us on Earth - and the team trying to protect us ---
 Gemini status: 200
-Title: The AI Security Clock is Ticking Fast
-Slug: ai-security-clock-is-ticking-fast
-Pushing draft: 2026-08-29-ai-security-clock-is-ticking-fast.md
+Title: Space Weather: The Invisible Force Threatening Our Tech-Driven World
+Slug: space-weather-invisible-force-threatening-tech-world
+Pushing draft: 2026-08-30-space-weather-invisible-force-threatening-tech-world.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-29-ai-security-clock-is-ticking-fast.md
+GitHub push failed for: 2026-08-30-space-weather-invisible-force-threatening-tech-world.md
 
---- Story 3/5: Reform of all social media should come with Meta changes, UN says ---
-Error on story 3: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
-
---- Story 4/5: What the Meta settlement means for the UK, and other questions after the deal ---
+--- Story 4/5: 'Our parents were crossing the border an hour before the flood hit' ---
 Gemini status: 200
-Title: The Meta Settlement: What It Means for the UK and Beyond
-Slug: meta-settlement-uk-impact-questions
-Pushing draft: 2026-08-29-meta-settlement-uk-impact-questions.md
+Title: Waiting for Word: The Human Toll of the Nepal Flash Floods
+Slug: waiting-for-word-nepal-flash-floods
+Pushing draft: 2026-08-30-waiting-for-word-nepal-flash-floods.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-29-meta-settlement-uk-impact-questions.md
+GitHub push failed for: 2026-08-30-waiting-for-word-nepal-flash-floods.md
 
---- Story 5/5: Unexpected chat between OpenAI agents led to Hugging Face hack ---
-Error on story 5: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+--- Story 5/5: Bank holiday weekend to see more thunderstorms and rain ---
+Gemini status: 200
+Title: Bank Holiday Weekend Weather: Rain and Thunderstorms on the Way
+Slug: bank-holiday-weekend-weather-rain-thunderstorms
+Pushing draft: 2026-08-30-bank-holiday-weekend-weather-rain-thunderstorms.md
+GitHub push status: 401
+GitHub push failed for: 2026-08-30-bank-holiday-weekend-weather-rain-thunderstorms.md
 
 Done! All 5 stories processed.
