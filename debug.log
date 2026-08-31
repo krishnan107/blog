@@ -1,36 +1,45 @@
-Date: 2026-08-30
+Date: 2026-08-31
 Fetching news...
-Topic: science | Stories found: 5
+Topic: world | Stories found: 5
 
---- Story 1/5: The race to stop England running out of water ---
-Error on story 1: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
-
---- Story 2/5: Thunderstorms and gusty winds set to continue into Bank Holiday Monday ---
+--- Story 1/5: US and Iran trade strikes for first time in weeks ---
 Gemini status: 200
-Error on story 2: Invalid control character at: line 4 column 422 (char 571)
-
---- Story 3/5: How the weather in space can affect us on Earth - and the team trying to protect us ---
-Gemini status: 200
-Title: Space Weather: The Invisible Force Threatening Our Tech-Driven World
-Slug: space-weather-invisible-force-threatening-tech-world
-Pushing draft: 2026-08-30-space-weather-invisible-force-threatening-tech-world.md
+Title: US and Iran Trade Strikes in the Strait of Hormuz
+Slug: us-iran-trade-strikes-strait-of-hormuz-august-2026
+Pushing draft: 2026-08-31-us-iran-trade-strikes-strait-of-hormuz-august-2026.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-30-space-weather-invisible-force-threatening-tech-world.md
+GitHub push failed for: 2026-08-31-us-iran-trade-strikes-strait-of-hormuz-august-2026.md
 
---- Story 4/5: 'Our parents were crossing the border an hour before the flood hit' ---
+--- Story 2/5: Man arrested after Swiss rave shooting that killed woman ---
 Gemini status: 200
-Title: Waiting for Word: The Human Toll of the Nepal Flash Floods
-Slug: waiting-for-word-nepal-flash-floods
-Pushing draft: 2026-08-30-waiting-for-word-nepal-flash-floods.md
+Title: Tragedy Strikes Swiss Techno Rave as Man Arrested After Shooting
+Slug: tragedy-strikes-swiss-techno-rave-shooting-aarau
+Pushing draft: 2026-08-31-tragedy-strikes-swiss-techno-rave-shooting-aarau.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-30-waiting-for-word-nepal-flash-floods.md
+GitHub push failed for: 2026-08-31-tragedy-strikes-swiss-techno-rave-shooting-aarau.md
 
---- Story 5/5: Bank holiday weekend to see more thunderstorms and rain ---
+--- Story 3/5: South African airline defends low-altitude aerial stunt over packed stadium ---
 Gemini status: 200
-Title: Bank Holiday Weekend Weather: Rain and Thunderstorms on the Way
-Slug: bank-holiday-weekend-weather-rain-thunderstorms
-Pushing draft: 2026-08-30-bank-holiday-weekend-weather-rain-thunderstorms.md
+Title: South African Airline Defends Low-Altitude Stadium Stunt
+Slug: south-african-airline-defends-stunt
+Pushing draft: 2026-08-31-south-african-airline-defends-stunt.md
 GitHub push status: 401
-GitHub push failed for: 2026-08-30-bank-holiday-weekend-weather-rain-thunderstorms.md
+GitHub push failed for: 2026-08-31-south-african-airline-defends-stunt.md
+
+--- Story 4/5: The jury's options in Lindsay Clancy's murder trial ---
+Gemini status: 200
+Title: Understanding the Stakes in the Lindsay Clancy Trial
+Slug: lindsay-clancy-trial-jury-options
+Pushing draft: 2026-08-31-lindsay-clancy-trial-jury-options.md
+GitHub push status: 401
+GitHub push failed for: 2026-08-31-lindsay-clancy-trial-jury-options.md
+
+--- Story 5/5: 'She slipped out of my hand' - couple's children missing after ferry capsizes ---
+Gemini status: 200
+Title: A Heartbreaking Tragedy on the Water
+Slug: couple-children-missing-after-ferry-capsizes
+Pushing draft: 2026-08-31-couple-children-missing-after-ferry-capsizes.md
+GitHub push status: 401
+GitHub push failed for: 2026-08-31-couple-children-missing-after-ferry-capsizes.md
 
 Done! All 5 stories processed.
