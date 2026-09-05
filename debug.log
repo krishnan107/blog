@@ -1,45 +1,45 @@
-Date: 2026-09-03
+Date: 2026-09-05
 Fetching news...
-Topic: sports | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: The Premier League premium is £20m - and that worries European clubs ---
+--- Story 1/5: OpenAI agents hijacked German website before Hugging Face hack, report claims ---
 Gemini status: 200
-Title: The Twenty Million Pound Premier League Tax And Why Europe Is Worried
-Slug: the-twenty-million-pound-premier-league-tax
-Pushing draft: 2026-09-03-the-twenty-million-pound-premier-league-tax.md
+Title: OpenAI Agents Hijack Websites and Raise New AI Security Concerns
+Slug: openai-agents-hijack-german-website-security-report
+Pushing draft: 2026-09-05-openai-agents-hijack-german-website-security-report.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-03-the-twenty-million-pound-premier-league-tax.md
+GitHub push failed for: 2026-09-05-openai-agents-hijack-german-website-security-report.md
 
---- Story 2/5: I used to play in-match games as a laugh - Dean ---
+--- Story 2/5: Xbox caps cloud gaming at 15 hours a month for Game Pass subscribers ---
 Gemini status: 200
-Title: Former Referee Mike Dean Admits He Stayed in the Centre Circle for Fun
-Slug: mike-dean-centre-circle-confession
-Pushing draft: 2026-09-03-mike-dean-centre-circle-confession.md
+Title: Xbox Adds a 15-Hour Monthly Cap to Cloud Gaming
+Slug: xbox-caps-cloud-gaming-15-hours
+Pushing draft: 2026-09-05-xbox-caps-cloud-gaming-15-hours.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-03-mike-dean-centre-circle-confession.md
+GitHub push failed for: 2026-09-05-xbox-caps-cloud-gaming-15-hours.md
 
---- Story 3/5: Ashes ticket price increase 'really poor' - Vaughan ---
+--- Story 3/5: Could robots be the future of theme parks? ---
 Gemini status: 200
-Title: Ashes Ticket Prices Gone Mad: Michael Vaughan Slams Edgbaston Hike
-Slug: ashes-ticket-prices-gone-mad-michael-vaughan-slams-edgbaston-hike
-Pushing draft: 2026-09-03-ashes-ticket-prices-gone-mad-michael-vaughan-slams-edgbaston-hike.md
+Title: Could Robots Be the Future of Theme Parks?
+Slug: could-robots-be-the-future-of-theme-parks
+Pushing draft: 2026-09-05-could-robots-be-the-future-of-theme-parks.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-03-ashes-ticket-prices-gone-mad-michael-vaughan-slams-edgbaston-hike.md
+GitHub push failed for: 2026-09-05-could-robots-be-the-future-of-theme-parks.md
 
---- Story 4/5: Italian Grand Prix declared heat-hazard race ---
+--- Story 4/5: 'I lost my savings after a job interview scam' ---
 Gemini status: 200
-Title: Sweating It Out At Monza: Italian Grand Prix Declared Heat-Hazard
-Slug: italian-grand-prix-heat-hazard
-Pushing draft: 2026-09-03-italian-grand-prix-heat-hazard.md
+Title: The Trap Behind the Screen: How Gen Z Jobseekers Are Losing Their Savings
+Slug: job-interview-scam-savings-lost
+Pushing draft: 2026-09-05-job-interview-scam-savings-lost.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-03-italian-grand-prix-heat-hazard.md
+GitHub push failed for: 2026-09-05-job-interview-scam-savings-lost.md
 
---- Story 5/5: Osnabruck display tifo with working rollercoaster before Kane ruins fun ---
+--- Story 5/5: AI data centres are booming in Australia - but at what cost? ---
 Gemini status: 200
-Title: Rollercoasters and Heartbreak: The Ultimate German Cup Tifo
-Slug: osnabruck-rollercoaster-tifo-bayern-munich
-Pushing draft: 2026-09-03-osnabruck-rollercoaster-tifo-bayern-munich.md
+Title: AI Data Centres Are Booming in Australia: Jobs or Just Empty Promises?
+Slug: ai-data-centres-boom-australia
+Pushing draft: 2026-09-05-ai-data-centres-boom-australia.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-03-osnabruck-rollercoaster-tifo-bayern-munich.md
+GitHub push failed for: 2026-09-05-ai-data-centres-boom-australia.md
 
 Done! All 5 stories processed.
