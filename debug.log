@@ -1,45 +1,45 @@
-Date: 2026-09-07
+Date: 2026-09-08
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: Germany's far-right AfD says 'democracy demands' parties work with them after state election win ---
+--- Story 1/5: Scammers demand ransoms from Instagram users over fake copyright claims ---
 Gemini status: 200
-Title: Germany Faces a Political Earthquake as the AfD Demands a Seat at the Table
-Slug: germany-afd-state-election-win
-Pushing draft: 2026-09-07-germany-afd-state-election-win.md
+Title: The New Instagram Extortion Scam Holding Accounts Hostage
+Slug: instagram-copyright-extortion-scam
+Pushing draft: 2026-09-08-instagram-copyright-extortion-scam.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-07-germany-afd-state-election-win.md
+GitHub push failed for: 2026-09-08-instagram-copyright-extortion-scam.md
 
---- Story 2/5: Israeli strikes in southern Lebanese village kill nine ---
+--- Story 2/5: Grindr to pay £26m to settle claims it allegedly shared users' HIV status ---
 Gemini status: 200
-Title: Fragile Peace on the Brink: What the Latest Lebanon Strikes Mean for the Region
-Slug: fragile-peace-on-the-brink-lebanon-strikes
-Pushing draft: 2026-09-07-fragile-peace-on-the-brink-lebanon-strikes.md
+Title: Grindr Agrees to £26 Million Privacy Settlement
+Slug: grindr-settles-privacy-claims
+Pushing draft: 2026-09-08-grindr-settles-privacy-claims.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-07-fragile-peace-on-the-brink-lebanon-strikes.md
+GitHub push failed for: 2026-09-08-grindr-settles-privacy-claims.md
 
---- Story 3/5: New videos of man in 9/11 lawsuit reveal extremist links ---
+--- Story 3/5: OpenAI chief scientist warns no-one is prepared for consequences of AI ---
 Gemini status: 200
-Title: Unseen 9/11 Footage Exposes New Ties in Long-Running Investigation
-Slug: unseen-9-11-footage-exposes-new-ties
-Pushing draft: 2026-09-07-unseen-9-11-footage-exposes-new-ties.md
+Title: GPT-6 Astra is Here, and OpenAI Says We Are Not Ready
+Slug: gpt-6-astra-openai-chief-scientist-warning
+Pushing draft: 2026-09-08-gpt-6-astra-openai-chief-scientist-warning.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-07-unseen-9-11-footage-exposes-new-ties.md
+GitHub push failed for: 2026-09-08-gpt-6-astra-openai-chief-scientist-warning.md
 
---- Story 4/5: Probe begins into why cargo plane overran Miami runway ---
+--- Story 4/5: Dolly Parton's sister pleads for end to 'AI garbage' posts after singer's death ---
 Gemini status: 200
-Title: Tragedy in Miami: Investigating the Amazon Cargo Plane Runaway
-Slug: probe-begins-into-miami-cargo-plane-runway-overrun
-Pushing draft: 2026-09-07-probe-begins-into-miami-cargo-plane-runway-overrun.md
+Title: Let Dolly Rest: The Fight Against AI Garbage
+Slug: let-dolly-rest-fight-against-ai-garbage
+Pushing draft: 2026-09-08-let-dolly-rest-fight-against-ai-garbage.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-07-probe-begins-into-miami-cargo-plane-runway-overrun.md
+GitHub push failed for: 2026-09-08-let-dolly-rest-fight-against-ai-garbage.md
 
---- Story 5/5: Kyiv air raid alerts at record high as Russia launches round-the-clock strikes ---
+--- Story 5/5: OpenAI agents hijacked German website before Hugging Face hack, report claims ---
 Gemini status: 200
-Title: Living in the Crosshairs: Kyiv Faces Record-Breaking Air Raids
-Slug: kyiv-air-raids-record-high
-Pushing draft: 2026-09-07-kyiv-air-raids-record-high.md
+Title: OpenAI Agents Caught in Wild German Website Hack
+Slug: openai-agents-hijacked-german-website
+Pushing draft: 2026-09-08-openai-agents-hijacked-german-website.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-07-kyiv-air-raids-record-high.md
+GitHub push failed for: 2026-09-08-openai-agents-hijacked-german-website.md
 
 Done! All 5 stories processed.
