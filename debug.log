@@ -1,45 +1,40 @@
-Date: 2026-09-14
+Date: 2026-09-15
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: China criticises idea it is in 'malicious competition' over AI ---
+--- Story 1/5: Pubs in England and Wales to allow digital ID apps to prove age ---
 Gemini status: 200
-Title: The Great AI Race: Is China Playing Fair or Just Playing to Win?
-Slug: china-criticises-ai-malicious-competition
-Pushing draft: 2026-09-14-china-criticises-ai-malicious-competition.md
+Title: Cheers to the Future: Digital IDs Coming to Pubs Across England and Wales
+Slug: digital-ids-in-pubs-england-wales
+Pushing draft: 2026-09-15-digital-ids-in-pubs-england-wales.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-14-china-criticises-ai-malicious-competition.md
+GitHub push failed for: 2026-09-15-digital-ids-in-pubs-england-wales.md
 
---- Story 2/5: Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station ---
+--- Story 2/5: Valve's Steam Frame is excellent - but at over £1,000 is VR still too expensive? ---
 Gemini status: 200
-Title: Close Calls in the Crosshairs: Boris Johnson Speaks Out After Border Strike
-Slug: close-calls-in-crosshairs-boris-johnson-speaks-out
-Pushing draft: 2026-09-14-close-calls-in-crosshairs-boris-johnson-speaks-out.md
+Title: Valve's Steam Frame: Is VR Still Too Pricey?
+Slug: valves-steam-frame-vr-too-pricey
+Pushing draft: 2026-09-15-valves-steam-frame-vr-too-pricey.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-14-close-calls-in-crosshairs-boris-johnson-speaks-out.md
+GitHub push failed for: 2026-09-15-valves-steam-frame-vr-too-pricey.md
 
---- Story 3/5: Thousands demand end to violence in Mexican cartel hotspot ---
+--- Story 3/5: What is AI, how does it work and why are some people concerned about it? ---
 Gemini status: 200
-Title: Thousands March for Peace in Culiacán Amid Cartel Violence
-Slug: thousands-march-peace-culiacan-cartel-violence
-Pushing draft: 2026-09-14-thousands-march-peace-culiacan-cartel-violence.md
+Title: Artificial Intelligence Is Everywhere Right Now, But Are We Ready for the Costs?
+Slug: ai-everywhere-costs-and-concerns
+Pushing draft: 2026-09-15-ai-everywhere-costs-and-concerns.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-14-thousands-march-peace-culiacan-cartel-violence.md
+GitHub push failed for: 2026-09-15-ai-everywhere-costs-and-concerns.md
 
---- Story 4/5: Swedish left-wing bloc narrowly ahead with election too close to call ---
+--- Story 4/5: Why are there concerns AI could threaten humanity, and how real are they? ---
 Gemini status: 200
-Title: Sweden's Nail-Biter Election: Too Close to Call
-Slug: swedens-nail-biter-election-too-close-to-call
-Pushing draft: 2026-09-14-swedens-nail-biter-election-too-close-to-call.md
+Title: Should We Actually Be Worried About AI Threatening Humanity?
+Slug: should-we-actually-be-worried-about-ai
+Pushing draft: 2026-09-15-should-we-actually-be-worried-about-ai.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-14-swedens-nail-biter-election-too-close-to-call.md
+GitHub push failed for: 2026-09-15-should-we-actually-be-worried-about-ai.md
 
---- Story 5/5: Six dead, 130 missing after Indonesian ferry capsizes in Java Sea ---
-Gemini status: 200
-Title: Tragedy in the Java Sea: Search Underway After Ferry Capsizes
-Slug: tragedy-in-java-sea-ferry-capsizes
-Pushing draft: 2026-09-14-tragedy-in-java-sea-ferry-capsizes.md
-GitHub push status: 401
-GitHub push failed for: 2026-09-14-tragedy-in-java-sea-ferry-capsizes.md
+--- Story 5/5: Trump downplays warnings of AI risks, citing rivalry with China ---
+Error on story 5: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
 
 Done! All 5 stories processed.
