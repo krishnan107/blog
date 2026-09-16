@@ -1,40 +1,45 @@
-Date: 2026-09-15
+Date: 2026-09-16
 Fetching news...
-Topic: technology | Stories found: 5
+Topic: science | Stories found: 5
 
---- Story 1/5: Pubs in England and Wales to allow digital ID apps to prove age ---
+--- Story 1/5: Colombia and Brazil deadliest countries for environmental activists, report says ---
 Gemini status: 200
-Title: Cheers to the Future: Digital IDs Coming to Pubs Across England and Wales
-Slug: digital-ids-in-pubs-england-wales
-Pushing draft: 2026-09-15-digital-ids-in-pubs-england-wales.md
+Title: Colombia and Brazil Remain the Most Dangerous Places for Environmental Activists
+Slug: colombia-brazil- deadliest-environmental-activists-2025
+Pushing draft: 2026-09-16-colombia-brazil- deadliest-environmental-activists-2025.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-15-digital-ids-in-pubs-england-wales.md
+GitHub push failed for: 2026-09-16-colombia-brazil- deadliest-environmental-activists-2025.md
 
---- Story 2/5: Valve's Steam Frame is excellent - but at over £1,000 is VR still too expensive? ---
+--- Story 2/5: Third Heathrow runway should only go ahead if airlines pay for cleaner flying, say advisers ---
 Gemini status: 200
-Title: Valve's Steam Frame: Is VR Still Too Pricey?
-Slug: valves-steam-frame-vr-too-pricey
-Pushing draft: 2026-09-15-valves-steam-frame-vr-too-pricey.md
+Title: Can Heathrow's Third Runway Fly Without Harming the Planet?
+Slug: heathrow-third-runway-climate-advice
+Pushing draft: 2026-09-16-heathrow-third-runway-climate-advice.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-15-valves-steam-frame-vr-too-pricey.md
+GitHub push failed for: 2026-09-16-heathrow-third-runway-climate-advice.md
 
---- Story 3/5: What is AI, how does it work and why are some people concerned about it? ---
+--- Story 3/5: What weapon could the US have put into space? ---
 Gemini status: 200
-Title: Artificial Intelligence Is Everywhere Right Now, But Are We Ready for the Costs?
-Slug: ai-everywhere-costs-and-concerns
-Pushing draft: 2026-09-15-ai-everywhere-costs-and-concerns.md
+Title: The Final Frontier of Combat: What Weapons Are Heading to Space?
+Slug: what-weapon-could-the-us-put-into-space
+Pushing draft: 2026-09-16-what-weapon-could-the-us-put-into-space.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-15-ai-everywhere-costs-and-concerns.md
+GitHub push failed for: 2026-09-16-what-weapon-could-the-us-put-into-space.md
 
---- Story 4/5: Why are there concerns AI could threaten humanity, and how real are they? ---
+--- Story 4/5: Will El Niño bring winter snow to the UK? ---
 Gemini status: 200
-Title: Should We Actually Be Worried About AI Threatening Humanity?
-Slug: should-we-actually-be-worried-about-ai
-Pushing draft: 2026-09-15-should-we-actually-be-worried-about-ai.md
+Title: Is El Nino Coming for Our Snowmen? A Look at the UK Winter Ahead
+Slug: is-el-nino-coming-for-our-snowmen-a-look-at-the-uk-winter-ahead
+Pushing draft: 2026-09-16-is-el-nino-coming-for-our-snowmen-a-look-at-the-uk-winter-ahead.md
 GitHub push status: 401
-GitHub push failed for: 2026-09-15-should-we-actually-be-worried-about-ai.md
+GitHub push failed for: 2026-09-16-is-el-nino-coming-for-our-snowmen-a-look-at-the-uk-winter-ahead.md
 
---- Story 5/5: Trump downplays warnings of AI risks, citing rivalry with China ---
-Error on story 5: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+--- Story 5/5: UK could 'unlock' 100 more oil and gas projects, say North Sea bosses ---
+Gemini status: 200
+Title: Could the North Sea Power the UK Back to Energy Independence?
+Slug: north-sea-oil-and-gas-independence
+Pushing draft: 2026-09-16-north-sea-oil-and-gas-independence.md
+GitHub push status: 401
+GitHub push failed for: 2026-09-16-north-sea-oil-and-gas-independence.md
 
 Done! All 5 stories processed.
