@@ -1,45 +1,41 @@
-Date: 2026-10-01
+Date: 2026-10-02
 Fetching news...
-Topic: sports | Stories found: 5
+Topic: world | Stories found: 5
 
---- Story 1/5: Ranking the best British football exports this century ---
+--- Story 1/5: 'I was not going to let others die' - pilot of Flydubai flight describes cockpit attack by co-pilot ---
 Gemini status: 200
-Title: Ranking the Best British Football Exports This Century
-Slug: ranking-the-best-british-football-exports-this-century
-Pushing draft: 2026-10-01-ranking-the-best-british-football-exports-this-century.md
-GitHub push status: 401
-GitHub push failed for: 2026-10-01-ranking-the-best-british-football-exports-this-century.md
+Error on story 1: Expecting ',' delimiter: line 4 column 1076 (char 1187)
 
---- Story 2/5: Nine scandals that rocked the sporting world ---
+--- Story 2/5: School protests send shivers down French government's spine ---
 Gemini status: 200
-Title: Nine Sports Scandals That Shocked the World
-Slug: nine-sports-scandals-that-shocked-the-world
-Pushing draft: 2026-10-01-nine-sports-scandals-that-shocked-the-world.md
+Title: French Schools in Upheaval: Why Protests Terrify Paris
+Slug: french-school-protests-october-2026
+Pushing draft: 2026-10-02-french-school-protests-october-2026.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-01-nine-sports-scandals-that-shocked-the-world.md
+GitHub push failed for: 2026-10-02-french-school-protests-october-2026.md
 
---- Story 3/5: Why penalty for Williamson handball was correct call ---
+--- Story 3/5: Christa Pike in critical condition after surviving two lethal injections, lawyer says ---
 Gemini status: 200
-Title: The Bizarre Williamson Handball: Why the Referee Actually Got It Right
-Slug: williamson-handball-correct-call-paris-fc
-Pushing draft: 2026-10-01-williamson-handball-correct-call-paris-fc.md
+Title: The Unimaginable Ordeal of Christa Pike
+Slug: christa-pike-critical-condition-after-botched-execution
+Pushing draft: 2026-10-02-christa-pike-critical-condition-after-botched-execution.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-01-williamson-handball-correct-call-paris-fc.md
+GitHub push failed for: 2026-10-02-christa-pike-critical-condition-after-botched-execution.md
 
---- Story 4/5: England call up Crane and rest Archer for Pakistan series ---
+--- Story 4/5: 'Ashamed': Cornell students gather to voice anger over alleged gang rape ---
 Gemini status: 200
-Title: Mason Crane Is Back: England Names Squad for Pakistan Tri-Series
-Slug: mason-crane-england-recall-pakistan-series
-Pushing draft: 2026-10-01-mason-crane-england-recall-pakistan-series.md
+Title: Ashamed and Angry: Cornell Students Demand Answers
+Slug: cornell-students-anger-alleged-gang-rape
+Pushing draft: 2026-10-02-cornell-students-anger-alleged-gang-rape.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-01-mason-crane-england-recall-pakistan-series.md
+GitHub push failed for: 2026-10-02-cornell-students-anger-alleged-gang-rape.md
 
---- Story 5/5: Russell says his 'confidence is back and growing' ---
+--- Story 5/5: Seoul warns 'further action' if Ukraine does not apologise over prisoner-of-war row ---
 Gemini status: 200
-Title: George Russell Is Back in the Fight and Ready to Chase Kimi Antonelli
-Slug: russell-confidence-back-and-growing
-Pushing draft: 2026-10-01-russell-confidence-back-and-growing.md
+Title: Diplomatic Drama: Seoul and Kyiv Clash Over Prisoner-of-War Row
+Slug: seoul-kyiv-prisoner-of-war-row
+Pushing draft: 2026-10-02-seoul-kyiv-prisoner-of-war-row.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-01-russell-confidence-back-and-growing.md
+GitHub push failed for: 2026-10-02-seoul-kyiv-prisoner-of-war-row.md
 
 Done! All 5 stories processed.
