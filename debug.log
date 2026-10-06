@@ -1,45 +1,41 @@
-Date: 2026-10-05
+Date: 2026-10-06
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: No10 insists UK military base RAF Fairford is safe after US withdraws bombers ---
+--- Story 1/5: Italian PM files to trademark her voice against AI threats ---
 Gemini status: 200
-Title: What is Going On at RAF Fairford?
-Slug: what-is-going-on-at-raf-fairford
-Pushing draft: 2026-10-05-what-is-going-on-at-raf-fairford.md
+Title: Italian PM Trademarks Her Voice to Fight AI Deepfakes
+Slug: italian-pm-trademarks-voice-ai-deepfakes
+Pushing draft: 2026-10-06-italian-pm-trademarks-voice-ai-deepfakes.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-05-what-is-going-on-at-raf-fairford.md
+GitHub push failed for: 2026-10-06-italian-pm-trademarks-voice-ai-deepfakes.md
 
---- Story 2/5: Spanish PM Sánchez calls early election after housing protests ---
+--- Story 2/5: ASOS app users receive push notifications apparently sent by hackers ---
 Gemini status: 200
-Title: Spain Is Heading Back to the Polls After Housing Protests
-Slug: spain-early-election-housing-protests-2026
-Pushing draft: 2026-10-05-spain-early-election-housing-protests-2026.md
+Title: ASOS App Users Baffled by Strange Hacker Push Notifications
+Slug: asos-app-users-baffled-by-strange-hacker-push-notifications
+Pushing draft: 2026-10-06-asos-app-users-baffled-by-strange-hacker-push-notifications.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-05-spain-early-election-housing-protests-2026.md
+GitHub push failed for: 2026-10-06-asos-app-users-baffled-by-strange-hacker-push-notifications.md
 
---- Story 3/5: Flydubai co-pilot planned to crash plane into Tel Aviv airport or building, reports say ---
+--- Story 3/5: Ofcom investigates Meta over Instagram Instants feature ---
 Gemini status: 200
-Title: Chilling Report Details Alleged Plot by Flydubai Co-Pilot
-Slug: flydubai-copilot-plot-tel-aviv
-Pushing draft: 2026-10-05-flydubai-copilot-plot-tel-aviv.md
+Title: Instagram in Hot Water: Why Ofcom is Investigating the New Instants Feature
+Slug: ofcom-investigates-meta-instagram-instants
+Pushing draft: 2026-10-06-ofcom-investigates-meta-instagram-instants.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-05-flydubai-copilot-plot-tel-aviv.md
+GitHub push failed for: 2026-10-06-ofcom-investigates-meta-instagram-instants.md
 
---- Story 4/5: Teenager's hand blown off during confrontation between France school protesters and police ---
+--- Story 4/5: Lego fraudster among last year's most high-profile insurance scammers ---
 Gemini status: 200
-Title: Tragedy Strikes During School Protests in France
-Slug: tragedy-during-france-school-protests
-Pushing draft: 2026-10-05-tragedy-during-france-school-protests.md
+Title: Building a Prison Sentence: The Wild Tale of the Lego Insurance Scam
+Slug: lego-fraudster-insurance-scam
+Pushing draft: 2026-10-06-lego-fraudster-insurance-scam.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-05-tragedy-during-france-school-protests.md
+GitHub push failed for: 2026-10-06-lego-fraudster-insurance-scam.md
 
---- Story 5/5: Nobel Prize awarded for revealing inner workings of the brain ---
+--- Story 5/5: Pentagon stops using Anthropic AI tools after blacklisting company, BBC told ---
 Gemini status: 200
-Title: Shedding Light on the Mind: The 2026 Nobel Prize Breakthrough
-Slug: nobel-prize-brain-inner-workings-2026
-Pushing draft: 2026-10-05-nobel-prize-brain-inner-workings-2026.md
-GitHub push status: 401
-GitHub push failed for: 2026-10-05-nobel-prize-brain-inner-workings-2026.md
+Error on story 5: Expecting ',' delimiter: line 1 column 615 (char 614)
 
 Done! All 5 stories processed.
