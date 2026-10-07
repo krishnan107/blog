@@ -1,41 +1,40 @@
-Date: 2026-10-06
+Date: 2026-10-07
 Fetching news...
-Topic: technology | Stories found: 5
+Topic: science | Stories found: 5
 
---- Story 1/5: Italian PM files to trademark her voice against AI threats ---
+--- Story 1/5: Tropical Storm Isaias forecast to become first Atlantic hurricane of 2026 ---
+Error on story 1: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=60)
+
+--- Story 2/5: Chemistry Nobel awarded for solving mystery of life's asymmetry ---
 Gemini status: 200
-Title: Italian PM Trademarks Her Voice to Fight AI Deepfakes
-Slug: italian-pm-trademarks-voice-ai-deepfakes
-Pushing draft: 2026-10-06-italian-pm-trademarks-voice-ai-deepfakes.md
+Title: Decoding Nature's Left-Handed Secret: The 2026 Chemistry Nobel Prize
+Slug: chemistry-nobel-2026-life-asymmetry
+Pushing draft: 2026-10-07-chemistry-nobel-2026-life-asymmetry.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-06-italian-pm-trademarks-voice-ai-deepfakes.md
+GitHub push failed for: 2026-10-07-chemistry-nobel-2026-life-asymmetry.md
 
---- Story 2/5: ASOS app users receive push notifications apparently sent by hackers ---
+--- Story 3/5: Rainmakers: The drones used to seed clouds ---
 Gemini status: 200
-Title: ASOS App Users Baffled by Strange Hacker Push Notifications
-Slug: asos-app-users-baffled-by-strange-hacker-push-notifications
-Pushing draft: 2026-10-06-asos-app-users-baffled-by-strange-hacker-push-notifications.md
+Title: Rainmakers: Are Drones the Future of Cloud Seeding?
+Slug: rainmakers-drones-cloud-seeding
+Pushing draft: 2026-10-07-rainmakers-drones-cloud-seeding.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-06-asos-app-users-baffled-by-strange-hacker-push-notifications.md
+GitHub push failed for: 2026-10-07-rainmakers-drones-cloud-seeding.md
 
---- Story 3/5: Ofcom investigates Meta over Instagram Instants feature ---
+--- Story 4/5: A beautiful Himalayan bird is changing its voice due to human activity, research shows ---
 Gemini status: 200
-Title: Instagram in Hot Water: Why Ofcom is Investigating the New Instants Feature
-Slug: ofcom-investigates-meta-instagram-instants
-Pushing draft: 2026-10-06-ofcom-investigates-meta-instagram-instants.md
+Title: Quiet on the Mountain: How Himalayan Monals Are Changing Their Tune
+Slug: himalayan-monal-changing-voice-human-activity
+Pushing draft: 2026-10-07-himalayan-monal-changing-voice-human-activity.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-06-ofcom-investigates-meta-instagram-instants.md
+GitHub push failed for: 2026-10-07-himalayan-monal-changing-voice-human-activity.md
 
---- Story 4/5: Lego fraudster among last year's most high-profile insurance scammers ---
+--- Story 5/5: 'Ghost particles' from space telescope wins physics Nobel ---
 Gemini status: 200
-Title: Building a Prison Sentence: The Wild Tale of the Lego Insurance Scam
-Slug: lego-fraudster-insurance-scam
-Pushing draft: 2026-10-06-lego-fraudster-insurance-scam.md
+Title: Ghost Particles and Big Wins: The Nobel Prize Illuminates the Universe
+Slug: ghost-particles-physics-nobel-francis-halzen
+Pushing draft: 2026-10-07-ghost-particles-physics-nobel-francis-halzen.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-06-lego-fraudster-insurance-scam.md
-
---- Story 5/5: Pentagon stops using Anthropic AI tools after blacklisting company, BBC told ---
-Gemini status: 200
-Error on story 5: Expecting ',' delimiter: line 1 column 615 (char 614)
+GitHub push failed for: 2026-10-07-ghost-particles-physics-nobel-francis-halzen.md
 
 Done! All 5 stories processed.
