@@ -1,45 +1,41 @@
-Date: 2026-10-08
+Date: 2026-10-09
 Fetching news...
-Topic: sports | Stories found: 5
+Topic: world | Stories found: 5
 
---- Story 1/5: Clubs fear political interference in Man City appeal ---
+--- Story 1/5: Firing squad execution to be livestreamed, Pentagon says ---
 Gemini status: 200
-Title: Political Pressure Brewing in Premier League as Clubs Eye Man City Appeal
-Slug: political-pressure-premier-league-man-city-appeal
-Pushing draft: 2026-10-08-political-pressure-premier-league-man-city-appeal.md
+Title: A Livestreamed Firing Squad? The Pentagon Pushes Legal Boundaries
+Slug: livestreamed-firing-squad-pentagon
+Pushing draft: 2026-10-09-livestreamed-firing-squad-pentagon.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-08-political-pressure-premier-league-man-city-appeal.md
+GitHub push failed for: 2026-10-09-livestreamed-firing-squad-pentagon.md
 
---- Story 2/5: Faster than F1: The extreme motorsport where women keep winning ---
+--- Story 2/5: Fort Hood survivor supports gunman's execution by firing squad but questions livestream ---
 Gemini status: 200
-Title: Inside Top Fuel: The Extreme Motorsport Where Women Rule the Track
-Slug: extreme-motorsport-where-women-keep-winning
-Pushing draft: 2026-10-08-extreme-motorsport-where-women-keep-winning.md
+Title: Justice on Camera: A Fort Hood Survivor Weighs In
+Slug: fort-hood-survivor-firing-squad-livestream
+Pushing draft: 2026-10-09-fort-hood-survivor-firing-squad-livestream.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-08-extreme-motorsport-where-women-keep-winning.md
+GitHub push failed for: 2026-10-09-fort-hood-survivor-firing-squad-livestream.md
 
---- Story 3/5: Russell to take further grid penalty this season ---
+--- Story 3/5: France promises 3,000 extra teachers in first step to calm student protests ---
 Gemini status: 200
-Title: Russell Faces More Pain as Grid Penalties Loom
-Slug: russell-faces-more-pain-as-grid-penalties-loom
-Pushing draft: 2026-10-08-russell-faces-more-pain-as-grid-penalties-loom.md
+Title: France Pledges 3,000 New Teachers to Quell Student Protests
+Slug: france-pledges-3000-new-teachers-to-quell-student-protests
+Pushing draft: 2026-10-09-france-pledges-3000-new-teachers-to-quell-student-protests.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-08-russell-faces-more-pain-as-grid-penalties-loom.md
+GitHub push failed for: 2026-10-09-france-pledges-3000-new-teachers-to-quell-student-protests.md
 
---- Story 4/5: Ceferin to stand for fourth term as Uefa president ---
+--- Story 4/5: Ethiopia warns Eritrea it will defend itself after troops cross border ---
 Gemini status: 200
-Title: Aleksander Ceferin Back in the Race for UEFA Presidency
-Slug: ceferin-to-stand-for-fourth-term-uefa-president
-Pushing draft: 2026-10-08-ceferin-to-stand-for-fourth-term-uefa-president.md
+Title: Tensions Boil Over: Ethiopia Warns Eritrea Following Border Crossing
+Slug: tensions-boil-over-ethiopia-warns-eritrea
+Pushing draft: 2026-10-09-tensions-boil-over-ethiopia-warns-eritrea.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-08-ceferin-to-stand-for-fourth-term-uefa-president.md
+GitHub push failed for: 2026-10-09-tensions-boil-over-ethiopia-warns-eritrea.md
 
---- Story 5/5: Wakefield top as all 14 Super League clubs stay for 2027 ---
+--- Story 5/5: Suspect linked to Monaco bomb attack on millionaire speaks to BBC ---
 Gemini status: 200
-Title: Wakefield Leads the Pack as Super League Locks in 14 Teams for 2027
-Slug: wakefield-leads-super-league-2027
-Pushing draft: 2026-10-08-wakefield-leads-super-league-2027.md
-GitHub push status: 401
-GitHub push failed for: 2026-10-08-wakefield-leads-super-league-2027.md
+Error on story 5: Invalid control character at: line 4 column 308 (char 433)
 
 Done! All 5 stories processed.
