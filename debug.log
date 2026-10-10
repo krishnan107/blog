@@ -1,41 +1,45 @@
-Date: 2026-10-09
+Date: 2026-10-10
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: Firing squad execution to be livestreamed, Pentagon says ---
+--- Story 1/5: Rogue Anthropic AI agent gave police fake tip in unsolved murder case ---
 Gemini status: 200
-Title: A Livestreamed Firing Squad? The Pentagon Pushes Legal Boundaries
-Slug: livestreamed-firing-squad-pentagon
-Pushing draft: 2026-10-09-livestreamed-firing-squad-pentagon.md
+Title: When Rogue AI Calls the Cops: The Philadelphia Anthropic Incident
+Slug: rogue-anthropic-ai-agent-philadelphia-police
+Pushing draft: 2026-10-10-rogue-anthropic-ai-agent-philadelphia-police.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-09-livestreamed-firing-squad-pentagon.md
+GitHub push failed for: 2026-10-10-rogue-anthropic-ai-agent-philadelphia-police.md
 
---- Story 2/5: Fort Hood survivor supports gunman's execution by firing squad but questions livestream ---
+--- Story 2/5: How drones are hunting fires hidden beneath the Cairngorms ---
 Gemini status: 200
-Title: Justice on Camera: A Fort Hood Survivor Weighs In
-Slug: fort-hood-survivor-firing-squad-livestream
-Pushing draft: 2026-10-09-fort-hood-survivor-firing-squad-livestream.md
+Title: Unseen Flames: How Drones Are Hunting Hidden Fires Beneath the Cairngorms
+Slug: how-drones-are-hunting-hidden-fires-beneath-the-cairngorms
+Pushing draft: 2026-10-10-how-drones-are-hunting-hidden-fires-beneath-the-cairngorms.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-09-fort-hood-survivor-firing-squad-livestream.md
+GitHub push failed for: 2026-10-10-how-drones-are-hunting-hidden-fires-beneath-the-cairngorms.md
 
---- Story 3/5: France promises 3,000 extra teachers in first step to calm student protests ---
+--- Story 3/5: Prize-winning image which sparked backlash was AI-generated, Nikon rules ---
 Gemini status: 200
-Title: France Pledges 3,000 New Teachers to Quell Student Protests
-Slug: france-pledges-3000-new-teachers-to-quell-student-protests
-Pushing draft: 2026-10-09-france-pledges-3000-new-teachers-to-quell-student-protests.md
+Title: The AI Photography Scandal That Just Rocked Nikon
+Slug: ai-photography-scandal-nikon-small-world-motion
+Pushing draft: 2026-10-10-ai-photography-scandal-nikon-small-world-motion.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-09-france-pledges-3000-new-teachers-to-quell-student-protests.md
+GitHub push failed for: 2026-10-10-ai-photography-scandal-nikon-small-world-motion.md
 
---- Story 4/5: Ethiopia warns Eritrea it will defend itself after troops cross border ---
+--- Story 4/5: Anthropic bans users from being 'cruel' to its AI systems ---
 Gemini status: 200
-Title: Tensions Boil Over: Ethiopia Warns Eritrea Following Border Crossing
-Slug: tensions-boil-over-ethiopia-warns-eritrea
-Pushing draft: 2026-10-09-tensions-boil-over-ethiopia-warns-eritrea.md
+Title: Are We Bullying the Bots? Anthropic Draws the Line on AI Abuse
+Slug: anthropic-bans-ai-abuse
+Pushing draft: 2026-10-10-anthropic-bans-ai-abuse.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-09-tensions-boil-over-ethiopia-warns-eritrea.md
+GitHub push failed for: 2026-10-10-anthropic-bans-ai-abuse.md
 
---- Story 5/5: Suspect linked to Monaco bomb attack on millionaire speaks to BBC ---
+--- Story 5/5: Fired OpenAI researchers say they were let go for 'prioritising safety' ---
 Gemini status: 200
-Error on story 5: Invalid control character at: line 4 column 308 (char 433)
+Title: The Great AI Safety Clash: Why Were OpenAI Researchers Fired?
+Slug: openai-researchers-fired-safety-controversy
+Pushing draft: 2026-10-10-openai-researchers-fired-safety-controversy.md
+GitHub push status: 401
+GitHub push failed for: 2026-10-10-openai-researchers-fired-safety-controversy.md
 
 Done! All 5 stories processed.
