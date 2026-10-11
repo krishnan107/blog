@@ -1,45 +1,45 @@
-Date: 2026-10-10
+Date: 2026-10-11
 Fetching news...
-Topic: technology | Stories found: 5
+Topic: science | Stories found: 5
 
---- Story 1/5: Rogue Anthropic AI agent gave police fake tip in unsolved murder case ---
+--- Story 1/5: Four dead and thousands without power after Hurricane Isaias lashes US ---
 Gemini status: 200
-Title: When Rogue AI Calls the Cops: The Philadelphia Anthropic Incident
-Slug: rogue-anthropic-ai-agent-philadelphia-police
-Pushing draft: 2026-10-10-rogue-anthropic-ai-agent-philadelphia-police.md
+Title: When Nature Packs a Punch: Surviving Hurricane Isaias
+Slug: surviving-hurricane-isaias
+Pushing draft: 2026-10-11-surviving-hurricane-isaias.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-10-rogue-anthropic-ai-agent-philadelphia-police.md
+GitHub push failed for: 2026-10-11-surviving-hurricane-isaias.md
 
---- Story 2/5: How drones are hunting fires hidden beneath the Cairngorms ---
+--- Story 2/5: Hundreds protest over data centre plans ---
+Gemini status: 200
+Title: Data Centres vs. Green Spaces: The Battle in Our Backyard
+Slug: data-centres-vs-green-spaces-battle
+Pushing draft: 2026-10-11-data-centres-vs-green-spaces-battle.md
+GitHub push status: 401
+GitHub push failed for: 2026-10-11-data-centres-vs-green-spaces-battle.md
+
+--- Story 3/5: Hurricane Isaias downgraded after making landfall in Florida ---
+Gemini status: 200
+Title: Hurricane Isaias Leaves a Trail of Power Outages Across the Southeast
+Slug: hurricane-isaias-downgraded-florida-alabama
+Pushing draft: 2026-10-11-hurricane-isaias-downgraded-florida-alabama.md
+GitHub push status: 401
+GitHub push failed for: 2026-10-11-hurricane-isaias-downgraded-florida-alabama.md
+
+--- Story 4/5: How drones are hunting fires hidden beneath the Cairngorms ---
 Gemini status: 200
 Title: Unseen Flames: How Drones Are Hunting Hidden Fires Beneath the Cairngorms
-Slug: how-drones-are-hunting-hidden-fires-beneath-the-cairngorms
-Pushing draft: 2026-10-10-how-drones-are-hunting-hidden-fires-beneath-the-cairngorms.md
+Slug: drones-hunting-hidden-fires-cairngorms
+Pushing draft: 2026-10-11-drones-hunting-hidden-fires-cairngorms.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-10-how-drones-are-hunting-hidden-fires-beneath-the-cairngorms.md
+GitHub push failed for: 2026-10-11-drones-hunting-hidden-fires-cairngorms.md
 
---- Story 3/5: Prize-winning image which sparked backlash was AI-generated, Nikon rules ---
+--- Story 5/5: 'People don't think recycling at work is part of their job description' ---
 Gemini status: 200
-Title: The AI Photography Scandal That Just Rocked Nikon
-Slug: ai-photography-scandal-nikon-small-world-motion
-Pushing draft: 2026-10-10-ai-photography-scandal-nikon-small-world-motion.md
+Title: Why We Stop Recycling the Moment We Step Into the Office
+Slug: why-we-stop-recycling-at-work
+Pushing draft: 2026-10-11-why-we-stop-recycling-at-work.md
 GitHub push status: 401
-GitHub push failed for: 2026-10-10-ai-photography-scandal-nikon-small-world-motion.md
-
---- Story 4/5: Anthropic bans users from being 'cruel' to its AI systems ---
-Gemini status: 200
-Title: Are We Bullying the Bots? Anthropic Draws the Line on AI Abuse
-Slug: anthropic-bans-ai-abuse
-Pushing draft: 2026-10-10-anthropic-bans-ai-abuse.md
-GitHub push status: 401
-GitHub push failed for: 2026-10-10-anthropic-bans-ai-abuse.md
-
---- Story 5/5: Fired OpenAI researchers say they were let go for 'prioritising safety' ---
-Gemini status: 200
-Title: The Great AI Safety Clash: Why Were OpenAI Researchers Fired?
-Slug: openai-researchers-fired-safety-controversy
-Pushing draft: 2026-10-10-openai-researchers-fired-safety-controversy.md
-GitHub push status: 401
-GitHub push failed for: 2026-10-10-openai-researchers-fired-safety-controversy.md
+GitHub push failed for: 2026-10-11-why-we-stop-recycling-at-work.md
 
 Done! All 5 stories processed.
