@@ -1,45 +1,45 @@
-Date: 2026-11-09
+Date: 2026-11-14
 Fetching news...
-Topic: world | Stories found: 5
+Topic: technology | Stories found: 5
 
---- Story 1/5: France accuses Iran of supermarket fridge hacking ---
+--- Story 1/5: Microsoft says services fully restored after day-long global outage ---
 Gemini status: 200
-Title: France Blames Iran for Supermarket Fridge Hacking
-Slug: france-blames-iran-for-supermarket-fridge-hacking
-Pushing draft: 2026-11-09-france-blames-iran-for-supermarket-fridge-hacking.md
+Title: Microsoft 365 Recovers After Global Outage
+Slug: microsoft-services-fully-restored-global-outage
+Pushing draft: 2026-11-14-microsoft-services-fully-restored-global-outage.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-09-france-blames-iran-for-supermarket-fridge-hacking.md
+GitHub push failed for: 2026-11-14-microsoft-services-fully-restored-global-outage.md
 
---- Story 2/5: Krakow shooting suspect has died in hospital, police say ---
+--- Story 2/5: Even Grand Theft Auto's original creators haven't been able to play GTA 6 ---
 Gemini status: 200
-Title: Tragic End in Krakow: Suspect Dies Following Devastating Shooting
-Slug: krakow-shooting-suspect-dies-hospital
-Pushing draft: 2026-11-09-krakow-shooting-suspect-dies-hospital.md
+Title: Grand Theft Auto 6 Is So Massive Even Its Creators Haven't Played It Yet
+Slug: gta-6-creators-havent-played-it
+Pushing draft: 2026-11-14-gta-6-creators-havent-played-it.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-09-krakow-shooting-suspect-dies-hospital.md
+GitHub push failed for: 2026-11-14-gta-6-creators-havent-played-it.md
 
---- Story 3/5: Inside the French drug gangs recruiting children to kill ---
+--- Story 3/5: How the Jensen Huang scandal created a headache for business-friendly Singapore ---
 Gemini status: 200
-Title: Inside the Shadows: How French Drug Gangs are Recruiting Children
-Slug: inside-french-drug-gangs-recruiting-children
-Pushing draft: 2026-11-09-inside-french-drug-gangs-recruiting-children.md
+Title: The Jensen Huang Scandal and Singapore's Tech Dilemma
+Slug: jensen-huang-scandal-singapore-tech-dilemma
+Pushing draft: 2026-11-14-jensen-huang-scandal-singapore-tech-dilemma.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-09-inside-french-drug-gangs-recruiting-children.md
+GitHub push failed for: 2026-11-14-jensen-huang-scandal-singapore-tech-dilemma.md
 
---- Story 4/5: Cruise ship pianist rescued from sea after nine hours in Pacific Ocean ---
+--- Story 4/5: Microsoft outage 'stark reminder' of how much we rely on tech ---
 Gemini status: 200
-Title: A Miraculous Rescue in the Pacific Ocean
-Slug: cruise-ship-pianist-rescued-after-nine-hours-in-pacific-ocean
-Pushing draft: 2026-11-09-cruise-ship-pianist-rescued-after-nine-hours-in-pacific-ocean.md
+Title: The Day the Cloud Stood Still: Why the Latest Microsoft Outage Hurts
+Slug: microsoft-outage-stark-reminder
+Pushing draft: 2026-11-14-microsoft-outage-stark-reminder.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-09-cruise-ship-pianist-rescued-after-nine-hours-in-pacific-ocean.md
+GitHub push failed for: 2026-11-14-microsoft-outage-stark-reminder.md
 
---- Story 5/5: Trump questions midterm elections integrity after previously accepting results ---
+--- Story 5/5: Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal ---
 Gemini status: 200
-Title: The Return of Doubt: Trump Questions Midterm Integrity on Truth Social
-Slug: trump-questions-midterm-integrity
-Pushing draft: 2026-11-09-trump-questions-midterm-integrity.md
+Title: Heat Rises for Lutnick in Washington Over Nvidia Scandal Fallout
+Slug: heat-rises-for-lutnick-nvidia-scandal
+Pushing draft: 2026-11-14-heat-rises-for-lutnick-nvidia-scandal.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-09-trump-questions-midterm-integrity.md
+GitHub push failed for: 2026-11-14-heat-rises-for-lutnick-nvidia-scandal.md
 
 Done! All 5 stories processed.
