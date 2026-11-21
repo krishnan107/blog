@@ -1,45 +1,37 @@
-Date: 2026-11-14
+Date: 2026-11-21
 Fetching news...
 Topic: technology | Stories found: 5
 
---- Story 1/5: Microsoft says services fully restored after day-long global outage ---
+--- Story 1/5: Can AI really help spot Black Friday deals? We put it to the test ---
 Gemini status: 200
-Title: Microsoft 365 Recovers After Global Outage
-Slug: microsoft-services-fully-restored-global-outage
-Pushing draft: 2026-11-14-microsoft-services-fully-restored-global-outage.md
+Title: Can AI Really Find Black Friday Deals? We Put Four Models to the Test
+Slug: can-ai-find-black-friday-deals-test
+Pushing draft: 2026-11-21-can-ai-find-black-friday-deals-test.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-14-microsoft-services-fully-restored-global-outage.md
+GitHub push failed for: 2026-11-21-can-ai-find-black-friday-deals-test.md
 
---- Story 2/5: Even Grand Theft Auto's original creators haven't been able to play GTA 6 ---
+--- Story 2/5: In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest ---
 Gemini status: 200
-Title: Grand Theft Auto 6 Is So Massive Even Its Creators Haven't Played It Yet
-Slug: gta-6-creators-havent-played-it
-Pushing draft: 2026-11-14-gta-6-creators-havent-played-it.md
-GitHub push status: 401
-GitHub push failed for: 2026-11-14-gta-6-creators-havent-played-it.md
+Error on story 2: Invalid control character at: line 4 column 560 (char 703)
 
---- Story 3/5: How the Jensen Huang scandal created a headache for business-friendly Singapore ---
+--- Story 3/5: GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history ---
 Gemini status: 200
-Title: The Jensen Huang Scandal and Singapore's Tech Dilemma
-Slug: jensen-huang-scandal-singapore-tech-dilemma
-Pushing draft: 2026-11-14-jensen-huang-scandal-singapore-tech-dilemma.md
+Title: GTA 6 Shatters Records With $3.8 Billion Single Day Sales
+Slug: gta-6-sales-hit-3-8bn-single-day
+Pushing draft: 2026-11-21-gta-6-sales-hit-3-8bn-single-day.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-14-jensen-huang-scandal-singapore-tech-dilemma.md
+GitHub push failed for: 2026-11-21-gta-6-sales-hit-3-8bn-single-day.md
 
---- Story 4/5: Microsoft outage 'stark reminder' of how much we rely on tech ---
+--- Story 4/5: Tech stock sell-off drags markets down as Anthropic shares slide ---
 Gemini status: 200
-Title: The Day the Cloud Stood Still: Why the Latest Microsoft Outage Hurts
-Slug: microsoft-outage-stark-reminder
-Pushing draft: 2026-11-14-microsoft-outage-stark-reminder.md
-GitHub push status: 401
-GitHub push failed for: 2026-11-14-microsoft-outage-stark-reminder.md
+Error on story 4: Unterminated string starting at: line 1 column 88 (char 87)
 
---- Story 5/5: Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal ---
+--- Story 5/5: Trump threatens ban on US firms building AI data centres overseas ---
 Gemini status: 200
-Title: Heat Rises for Lutnick in Washington Over Nvidia Scandal Fallout
-Slug: heat-rises-for-lutnick-nvidia-scandal
-Pushing draft: 2026-11-14-heat-rises-for-lutnick-nvidia-scandal.md
+Title: Trump Floats Overseas AI Data Center Ban: What Does It Mean for Tech?
+Slug: trump-floats-overseas-ai-data-center-ban
+Pushing draft: 2026-11-21-trump-floats-overseas-ai-data-center-ban.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-14-heat-rises-for-lutnick-nvidia-scandal.md
+GitHub push failed for: 2026-11-21-trump-floats-overseas-ai-data-center-ban.md
 
 Done! All 5 stories processed.
