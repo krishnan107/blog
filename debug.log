@@ -1,37 +1,41 @@
-Date: 2026-11-21
+Date: 2026-11-26
 Fetching news...
-Topic: technology | Stories found: 5
+Topic: sports | Stories found: 5
 
---- Story 1/5: Can AI really help spot Black Friday deals? We put it to the test ---
+--- Story 1/5: GB win decider to reach Davis Cup semis for first time since 2019 ---
 Gemini status: 200
-Title: Can AI Really Find Black Friday Deals? We Put Four Models to the Test
-Slug: can-ai-find-black-friday-deals-test
-Pushing draft: 2026-11-21-can-ai-find-black-friday-deals-test.md
+Title: Great Britain is Heading Back to the Davis Cup Semis!
+Slug: gb-davis-cup-semis-2026
+Pushing draft: 2026-11-26-gb-davis-cup-semis-2026.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-21-can-ai-find-black-friday-deals-test.md
+GitHub push failed for: 2026-11-26-gb-davis-cup-semis-2026.md
 
---- Story 2/5: In a year of AI solving maths problems, an Anthropic worker says he may have cracked the biggest ---
+--- Story 2/5: Russell says Verstappen's criticism 'quite amusing' ---
 Gemini status: 200
-Error on story 2: Invalid control character at: line 4 column 560 (char 703)
-
---- Story 3/5: GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history ---
-Gemini status: 200
-Title: GTA 6 Shatters Records With $3.8 Billion Single Day Sales
-Slug: gta-6-sales-hit-3-8bn-single-day
-Pushing draft: 2026-11-21-gta-6-sales-hit-3-8bn-single-day.md
+Title: Russell Laughs Off Verstappen After Las Vegas Drama
+Slug: russell-laughs-off-verstappen-after-las-vegas-drama
+Pushing draft: 2026-11-26-russell-laughs-off-verstappen-after-las-vegas-drama.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-21-gta-6-sales-hit-3-8bn-single-day.md
+GitHub push failed for: 2026-11-26-russell-laughs-off-verstappen-after-las-vegas-drama.md
 
---- Story 4/5: Tech stock sell-off drags markets down as Anthropic shares slide ---
+--- Story 3/5: Not even making a 12-man bench - what next for Garnacho? ---
 Gemini status: 200
-Error on story 4: Unterminated string starting at: line 1 column 88 (char 87)
-
---- Story 5/5: Trump threatens ban on US firms building AI data centres overseas ---
-Gemini status: 200
-Title: Trump Floats Overseas AI Data Center Ban: What Does It Mean for Tech?
-Slug: trump-floats-overseas-ai-data-center-ban
-Pushing draft: 2026-11-21-trump-floats-overseas-ai-data-center-ban.md
+Title: What Next for Alejandro Garnacho?
+Slug: what-next-for-alejandro-garnacho
+Pushing draft: 2026-11-26-what-next-for-alejandro-garnacho.md
 GitHub push status: 401
-GitHub push failed for: 2026-11-21-trump-floats-overseas-ai-data-center-ban.md
+GitHub push failed for: 2026-11-26-what-next-for-alejandro-garnacho.md
+
+--- Story 4/5: India's Pant joins New Zealand club match under false name ---
+Gemini status: 200
+Error on story 4: Invalid \escape: line 1 column 919 (char 918)
+
+--- Story 5/5: Faldo urges LIV stars to 'chip in' for unpaid firms ---
+Gemini status: 200
+Title: Sir Nick Faldo Has a Message for LIV Golf Stars: Pay the Small Businesses
+Slug: faldo-urges-liv-stars-to-help-unpaid-firms
+Pushing draft: 2026-11-26-faldo-urges-liv-stars-to-help-unpaid-firms.md
+GitHub push status: 401
+GitHub push failed for: 2026-11-26-faldo-urges-liv-stars-to-help-unpaid-firms.md
 
 Done! All 5 stories processed.
